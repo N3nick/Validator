@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.camera:camera-lifecycle:1.0.0-beta09@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/1900b44adf4ea1c82d95c457b507a503/camera-lifecycle-1.0.0-beta09/res" />
+      <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/3975b7ad6721416af5da0116dbc82351/jetified-camera-lifecycle-1.0.0-beta09/res" />
+      <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/3975b7ad6721416af5da0116dbc82351/jetified-camera-lifecycle-1.0.0-beta09/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/3975b7ad6721416af5da0116dbc82351/jetified-camera-lifecycle-1.0.0-beta09/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/modules-2/files-2.1/androidx.camera/camera-lifecycle/1.0.0-beta09/8a85c61d860720fc0351a450d2973090ad76994e/camera-lifecycle-1.0.0-beta09-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

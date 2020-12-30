@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-vision-common:19.1.2@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/314ff84980dadba69846f6e52f6896b9/play-services-vision-common-19.1.2/res" />
+      <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/c396b9d6d37703509abb0b77b015d3e9/jetified-play-services-vision-common-19.1.2/res" />
+      <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/c396b9d6d37703509abb0b77b015d3e9/jetified-play-services-vision-common-19.1.2/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/c396b9d6d37703509abb0b77b015d3e9/jetified-play-services-vision-common-19.1.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-vision-common/19.1.2/c78078339d649dcd66d2d5948b64201f8b42d83e/play-services-vision-common-19.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

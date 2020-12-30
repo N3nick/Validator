@@ -1,0 +1,2 @@
+com/google/mlkit/codelab/translate/BuildConfig.java
+ com.google.mlkit.codelab.translate.BuildConfig

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/c2d06c6d1803a7a3823d054d56fddfe6/play-services-mlkit-barcode-scanning-16.1.2/res" />
+      <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/caa15bb506e7123a486ca5d95188d68a/jetified-play-services-mlkit-barcode-scanning-16.1.2/res" />
+      <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/caa15bb506e7123a486ca5d95188d68a/jetified-play-services-mlkit-barcode-scanning-16.1.2/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/caa15bb506e7123a486ca5d95188d68a/jetified-play-services-mlkit-barcode-scanning-16.1.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-mlkit-barcode-scanning/16.1.2/79ef9a73031e00b8d4e2c5b3f8f8b4ca9a401cd/play-services-mlkit-barcode-scanning-16.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

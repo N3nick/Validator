@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_translate">
+
+    <fragment
+        android:id="@+id/navigation_translate"
+        android:name="com.google.mlkit.codelab.translate.main.MainFragment"
+        android:label="@string/title_translate"
+        tools:layout="@layout/main_fragment" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_face"-->
+<!--        android:name="com.google.mlkit.codelab.translate.main.face.FaceFragment"-->
+<!--        android:label="@string/title_face"-->
+<!--        tools:layout="@layout/fragment_face" />-->
+
+    <fragment
+        android:id="@+id/navigation_barcode"
+        android:name="com.google.mlkit.codelab.translate.main.barcode.BarcodeFragment"
+        android:label="@string/title_barcode"
+        tools:layout="@layout/fragment_barcode" />
+</navigation>
