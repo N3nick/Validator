@@ -56,16 +56,6 @@ class BarcodeFragment : Fragment() {
 
        container = view as RelativeLayout
         textView = container.findViewById(R.id.tv_textView)
-       /* viewFinder = container.findViewById(R.id.viewfinder)
-
-        // Initialize our background executor
-        cameraExecutor = Executors.newSingleThreadExecutor()
-        scopedExecutor = ScopedExecutor(cameraExecutor)
-
-        setUpCamera()
-        viewModel.barcodeResult.observe(viewLifecycleOwner, Observer {
-            resultText.text = it
-        })*/
 
         codeScanner = CodeScanner(requireContext(), scanner_view)
         codeScanner.apply {
@@ -103,80 +93,6 @@ class BarcodeFragment : Fragment() {
         codeScanner.releaseResources()
     }
 
-    /** Initialize CameraX, and prepare to bind the camera use cases  */
-    private fun setUpCamera() {
-        val cameraProviderFuture = ProcessCameraProvider.getInstance(requireContext())
-        cameraProviderFuture.addListener(Runnable {
-/*
-            // CameraProvider
-            cameraProvider = cameraProviderFuture.get()
-
-            // Build and bind the camera use cases
-            bindCameraUseCases()*/
-        }, ContextCompat.getMainExecutor(requireContext()))
-    }
 
 
-
-  /*  private fun bindCameraUseCases() {
-        val cameraProvider = cameraProvider
-            ?: throw IllegalStateException("Camera initialization failed.")
-
-        // Get screen metrics used to setup camera for full screen resolution
-        val metrics = DisplayMetrics().also { viewFinder.display.getRealMetrics(it) }
-
-        val screenAspectRatio = aspectRatio(metrics.widthPixels, metrics.heightPixels)
-
-        val rotation = viewFinder.display.rotation
-
-        val preview = Preview.Builder()
-            .setTargetAspectRatio(screenAspectRatio)
-            .setTargetRotation(rotation)
-            .build()
-
-        // Build the image analysis use case and instantiate our analyzer
-        imageAnalyzer = ImageAnalysis.Builder()
-            // We request aspect ratio but no resolution
-            .setTargetAspectRatio(screenAspectRatio)
-            .setTargetRotation(rotation)
-            .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
-            .build()
-            .also {
-                it.setAnalyzer(
-                    scopedExecutor
-                    , BarcodeAnalyzer(
-                        requireContext(),
-                        lifecycle,
-                        viewModel.barcodeResult
-                    )
-                )
-            }
-
-        // Select back camera since text detection does not work with front camera
-        val cameraSelector =
-            CameraSelector.Builder().requireLensFacing(CameraSelector.LENS_FACING_BACK).build()
-
-        try {
-            // Unbind use cases before rebinding
-            cameraProvider.unbindAll()
-
-            // Bind use cases to camera
-            camera = cameraProvider.bindToLifecycle(
-                this, cameraSelector, preview, imageAnalyzer
-            )
-            preview.setSurfaceProvider(viewFinder.surfaceProvider)
-        } catch (exc: IllegalStateException) {
-            Log.e(TAG, "Use case binding failed. This must be running on main thread.", exc)
-        }
-    }*/
-
-   /* private fun aspectRatio(width: Int, height: Int): Int {
-        val previewRatio = ln(max(width, height).toDouble() / min(width, height))
-        if (abs(previewRatio - ln(RATIO_4_3_VALUE))
-            <= abs(previewRatio - ln(RATIO_16_9_VALUE))
-        ) {
-            return AspectRatio.RATIO_4_3
-        }
-        return AspectRatio.RATIO_16_9
-    }*/
 }

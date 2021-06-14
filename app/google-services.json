@@ -44,9 +44,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:860558849494:android:808024c2e8abd9f822e077",
+        "mobilesdk_app_id": "1:860558849494:android:ba196f5fe367362922e077",
         "android_client_info": {
-          "package_name": "com.google.mlkit.codelab.translate.main.barcode"
+          "package_name": "com.google.mlkit.codelab.translate"
         }
       },
       "oauth_client": [

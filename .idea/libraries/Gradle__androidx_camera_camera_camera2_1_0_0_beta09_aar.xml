@@ -2,15 +2,15 @@
   <library name="Gradle: androidx.camera:camera-camera2:1.0.0-beta09@aar">
     <ANNOTATIONS>
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/79eb66f65cf2733ba270340896410c18/jetified-camera-camera2-1.0.0-beta09/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/79eb66f65cf2733ba270340896410c18/jetified-camera-camera2-1.0.0-beta09/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a3a5b5de33d8c0605d3a569d4e13faff/jetified-camera-camera2-1.0.0-beta09/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/79eb66f65cf2733ba270340896410c18/jetified-camera-camera2-1.0.0-beta09/res" />
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/79eb66f65cf2733ba270340896410c18/jetified-camera-camera2-1.0.0-beta09/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/79eb66f65cf2733ba270340896410c18/jetified-camera-camera2-1.0.0-beta09/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/79eb66f65cf2733ba270340896410c18/jetified-camera-camera2-1.0.0-beta09/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/79eb66f65cf2733ba270340896410c18/jetified-camera-camera2-1.0.0-beta09/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/79eb66f65cf2733ba270340896410c18/jetified-camera-camera2-1.0.0-beta09/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a3a5b5de33d8c0605d3a569d4e13faff/jetified-camera-camera2-1.0.0-beta09/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a3a5b5de33d8c0605d3a569d4e13faff/jetified-camera-camera2-1.0.0-beta09/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a3a5b5de33d8c0605d3a569d4e13faff/jetified-camera-camera2-1.0.0-beta09/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

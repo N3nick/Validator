@@ -4,9 +4,9 @@
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/7ab4c156acb886934c2edacbb0a34af2/jetified-translate-16.1.1/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/7ab4c156acb886934c2edacbb0a34af2/jetified-translate-16.1.1/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/7ab4c156acb886934c2edacbb0a34af2/jetified-translate-16.1.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7ab4c156acb886934c2edacbb0a34af2/jetified-translate-16.1.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7ab4c156acb886934c2edacbb0a34af2/jetified-translate-16.1.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7ab4c156acb886934c2edacbb0a34af2/jetified-translate-16.1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2005f244a626dfcdbeb16f8b914a09b/jetified-translate-16.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2005f244a626dfcdbeb16f8b914a09b/jetified-translate-16.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2005f244a626dfcdbeb16f8b914a09b/jetified-translate-16.1.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/modules-2/files-2.1/com.google.mlkit/translate/16.1.1/654786b802822e702e69251b3adb2062af79b449/translate-16.1.1-javadoc.jar!/" />

@@ -5,9 +5,11 @@
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/22adbf9ca5b5219f9767530cc00a31a0/jetified-play-services-vision-20.1.2/res" />
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/22adbf9ca5b5219f9767530cc00a31a0/jetified-play-services-vision-20.1.2/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/22adbf9ca5b5219f9767530cc00a31a0/jetified-play-services-vision-20.1.2/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22adbf9ca5b5219f9767530cc00a31a0/jetified-play-services-vision-20.1.2/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22adbf9ca5b5219f9767530cc00a31a0/jetified-play-services-vision-20.1.2/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22adbf9ca5b5219f9767530cc00a31a0/jetified-play-services-vision-20.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32231ba81f9aaa1389035bde98c315b6/jetified-play-services-vision-20.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aa1771a230ea2a398f15212b21f078f1/jetified-play-services-vision-20.1.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aa1771a230ea2a398f15212b21f078f1/jetified-play-services-vision-20.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aa1771a230ea2a398f15212b21f078f1/jetified-play-services-vision-20.1.2/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-vision/20.1.2/cc49989f49d9f8572a58337a89f4aa5dc7a15bc4/play-services-vision-20.1.2-javadoc.jar!/" />

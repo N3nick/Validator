@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">860558849494-mtl571bo1p2im14vu7grl9c87buh6s5t.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">860558849494</string>
+    <string name="google_api_key" translatable="false">AIzaSyCb1b7fv_HL7mqU-ckkXJSCRaWJTHrF3VY</string>
+    <string name="google_app_id" translatable="false">1:860558849494:android:ba196f5fe367362922e077</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCb1b7fv_HL7mqU-ckkXJSCRaWJTHrF3VY</string>
+    <string name="google_storage_bucket" translatable="false">text-recognition-project-14168.appspot.com</string>
+    <string name="project_id" translatable="false">text-recognition-project-14168</string>
+</resources>

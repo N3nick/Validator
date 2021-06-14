@@ -20,6 +20,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 28
@@ -85,4 +86,10 @@ dependencies {
     //barcode scanner library
     implementation 'com.budiyev.android:code-scanner:2.1.0'
 
+    //firebase text recognition library
+    implementation 'com.google.firebase:firebase-ml-vision:24.0.3'
+
+    implementation 'com.google.firebase:firebase-core:9.6.1'
+
 }
+

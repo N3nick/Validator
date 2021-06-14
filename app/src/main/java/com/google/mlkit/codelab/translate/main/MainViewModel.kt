@@ -35,12 +35,12 @@ import com.google.mlkit.nl.translate.TranslateLanguage
 import com.google.mlkit.nl.translate.Translation
 import com.google.mlkit.nl.translate.Translator
 import com.google.mlkit.nl.translate.TranslatorOptions
-import com.google.mlkit.codelab.translate.main.MainFragment.Companion.DESIRED_HEIGHT_CROP_PERCENT
-import com.google.mlkit.codelab.translate.main.MainFragment.Companion.DESIRED_WIDTH_CROP_PERCENT
+/*import com.google.mlkit.codelab.translate.main.MainFragment.Companion.DESIRED_HEIGHT_CROP_PERCENT
+import com.google.mlkit.codelab.translate.main.MainFragment.Companion.DESIRED_WIDTH_CROP_PERCENT*/
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val languageIdentifier = LanguageIdentification.getClient()
+   /* private val languageIdentifier = LanguageIdentification.getClient()
     val targetLang = MutableLiveData<Language>()
     val sourceText = SmoothedMutableLiveData<String>(SMOOTHING_DURATION)
 
@@ -153,5 +153,5 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         private const val SMOOTHING_DURATION = 50L
 
         private const val NUM_TRANSLATORS = 1
-    }
+    }*/
 }
