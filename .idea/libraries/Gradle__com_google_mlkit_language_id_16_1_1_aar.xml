@@ -5,9 +5,13 @@
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/9404a90615c64cb36f2117ae87c6f31f/jetified-language-id-16.1.1/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/9404a90615c64cb36f2117ae87c6f31f/jetified-language-id-16.1.1/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/9404a90615c64cb36f2117ae87c6f31f/jetified-language-id-16.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9404a90615c64cb36f2117ae87c6f31f/jetified-language-id-16.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9404a90615c64cb36f2117ae87c6f31f/jetified-language-id-16.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9404a90615c64cb36f2117ae87c6f31f/jetified-language-id-16.1.1/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/modules-2/files-2.1/com.google.mlkit/language-id/16.1.1/20354d07f8951be239997564ba1d391d5d6890f7/language-id-16.1.1-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.mlkit/language-id/16.1.1/20354d07f8951be239997564ba1d391d5d6890f7/language-id-16.1.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

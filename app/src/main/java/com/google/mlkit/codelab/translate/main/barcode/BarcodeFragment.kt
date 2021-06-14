@@ -7,17 +7,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RelativeLayout
+import android.widget.TextView
 import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import com.budiyev.android.codescanner.AutoFocusMode
+import com.budiyev.android.codescanner.CodeScanner
+import com.budiyev.android.codescanner.DecodeCallback
+import com.budiyev.android.codescanner.ErrorCallback
+import com.budiyev.android.codescanner.ScanMode
 import com.google.mlkit.codelab.translate.R
 import com.google.mlkit.codelab.translate.analyzer.BarcodeAnalyzer
 import com.google.mlkit.codelab.translate.util.ScopedExecutor
 import kotlinx.android.synthetic.main.fragment_barcode.*
+import kotlinx.android.synthetic.main.fragment_barcode.view.*
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import kotlin.math.abs
@@ -27,24 +36,9 @@ import kotlin.math.min
 
 class BarcodeFragment : Fragment() {
 
-    companion object {
-        private const val RATIO_4_3_VALUE = 4.0 / 3.0
-        private const val RATIO_16_9_VALUE = 16.0 / 9.0
-        private const val TAG = "BarcodeFragment"
-        fun newInstance() = BarcodeFragment()
-    }
-
-    private val viewModel: BarcodeViewModel by viewModels()
-    private var cameraProvider: ProcessCameraProvider? = null
-    private var camera: Camera? = null
-    private var imageAnalyzer: ImageAnalysis? = null
-    private lateinit var container: ConstraintLayout
-    private lateinit var viewFinder: PreviewView
-
-    /** Blocking camera operations are performed using this executor */
-    private lateinit var cameraExecutor: ExecutorService
-
-    private lateinit var scopedExecutor: ScopedExecutor
+    private lateinit var codeScanner: CodeScanner
+    private lateinit var container: ViewGroup
+    private lateinit var textView: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -55,17 +49,14 @@ class BarcodeFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-
-        // Shut down our background executor
-        cameraExecutor.shutdown()
-        scopedExecutor.shutdown()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        container = view as ConstraintLayout
-        viewFinder = container.findViewById(R.id.viewfinder)
+       container = view as RelativeLayout
+        textView = container.findViewById(R.id.tv_textView)
+       /* viewFinder = container.findViewById(R.id.viewfinder)
 
         // Initialize our background executor
         cameraExecutor = Executors.newSingleThreadExecutor()
@@ -74,23 +65,60 @@ class BarcodeFragment : Fragment() {
         setUpCamera()
         viewModel.barcodeResult.observe(viewLifecycleOwner, Observer {
             resultText.text = it
-        })
+        })*/
+
+        codeScanner = CodeScanner(requireContext(), scanner_view)
+        codeScanner.apply {
+            //set to use back camera
+            camera = CodeScanner.CAMERA_BACK
+            //set to scan all barcode formats
+            formats = CodeScanner.ALL_FORMATS
+
+            autoFocusMode = AutoFocusMode.SAFE
+            scanMode = ScanMode.CONTINUOUS
+            isAutoFocusEnabled = true
+            isFlashEnabled = false
+
+            decodeCallback = DecodeCallback {
+                activity?.runOnUiThread {
+                    textView.text = it.text
+                }
+            }
+
+            errorCallback = ErrorCallback {
+                activity?.runOnUiThread {
+                    Log.e("Main", "codeScanner: ${it.message}")
+                }
+            }
+        }
+        }
+
+    override fun onResume() {
+        super.onResume()
+        codeScanner.startPreview()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        codeScanner.releaseResources()
     }
 
     /** Initialize CameraX, and prepare to bind the camera use cases  */
     private fun setUpCamera() {
         val cameraProviderFuture = ProcessCameraProvider.getInstance(requireContext())
         cameraProviderFuture.addListener(Runnable {
-
+/*
             // CameraProvider
             cameraProvider = cameraProviderFuture.get()
 
             // Build and bind the camera use cases
-            bindCameraUseCases()
+            bindCameraUseCases()*/
         }, ContextCompat.getMainExecutor(requireContext()))
     }
 
-    private fun bindCameraUseCases() {
+
+
+  /*  private fun bindCameraUseCases() {
         val cameraProvider = cameraProvider
             ?: throw IllegalStateException("Camera initialization failed.")
 
@@ -140,9 +168,9 @@ class BarcodeFragment : Fragment() {
         } catch (exc: IllegalStateException) {
             Log.e(TAG, "Use case binding failed. This must be running on main thread.", exc)
         }
-    }
+    }*/
 
-    private fun aspectRatio(width: Int, height: Int): Int {
+   /* private fun aspectRatio(width: Int, height: Int): Int {
         val previewRatio = ln(max(width, height).toDouble() / min(width, height))
         if (abs(previewRatio - ln(RATIO_4_3_VALUE))
             <= abs(previewRatio - ln(RATIO_16_9_VALUE))
@@ -150,5 +178,5 @@ class BarcodeFragment : Fragment() {
             return AspectRatio.RATIO_4_3
         }
         return AspectRatio.RATIO_16_9
-    }
+    }*/
 }
