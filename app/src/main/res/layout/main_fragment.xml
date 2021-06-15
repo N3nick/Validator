@@ -173,11 +173,24 @@
         android:layout_marginBottom="10dp" />
 
     <TextView
+        android:id="@+id/text_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view"
+        android:layout_alignParentStart="true"
+        android:text="Detected text :"
+        android:textSize="24sp"
+        android:maxLines="5"
+        android:layout_margin="10dp"/>
+
+    <TextView
         android:id="@+id/text_display"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/image_view"
-        android:text="Display Detected text"
+        android:text="..."
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/text_"
         android:textSize="26sp"
         android:maxLines="5"
         android:layout_margin="10dp"/>
@@ -187,19 +200,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_display"
-        android:text="Capture Image"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"/>
+        android:text="Capture Ticket Image"
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/display_text_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/take_imageButton"
-        android:text="Detect Text"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@android:color/holo_blue_dark"
-        android:textColor="@android:color/white"/>
+        android:text="Verify Ticket"
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>

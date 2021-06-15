@@ -149,14 +149,14 @@ class TextAnalyzer(
                                         // Request a string response from the provided URL.
                                         val jsonObjectRequest  = JsonObjectRequest(
                                                 Request.Method.GET, url, null,
-                                                Response.Listener { response ->
-                                                    // Display the first 500 characters of the response string.
-                                                    val JSONObj = response.getString("message")
-                                                    result.value = "Response: %s".format(JSONObj)
-                                                },
-                                                Response.ErrorListener { error ->
-                                                    result.value = getVolleyError(error)
-                                                })
+                                            { response ->
+                                                // Display the first 500 characters of the response string.
+                                                val JSONObj = response.getString("message")
+                                                result.value = "Response: %s".format(JSONObj)
+                                            },
+                                            { error ->
+                                                result.value = getVolleyError(error)
+                                            })
 
                                         // Add the request to the RequestQueue.
 

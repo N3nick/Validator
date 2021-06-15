@@ -86,7 +86,7 @@ dependencies {
     //barcode scanner library
     implementation 'com.budiyev.android:code-scanner:2.1.0'
 
-    //firebase text recognition library
+    //firebase text recognition library... do not change version
     implementation 'com.google.firebase:firebase-ml-vision:24.0.3'
 
     implementation 'com.google.firebase:firebase-core:9.6.1'
