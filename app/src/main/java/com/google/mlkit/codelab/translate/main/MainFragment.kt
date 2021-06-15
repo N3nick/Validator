@@ -139,9 +139,6 @@ class MainFragment : Fragment() {
                 //  result.value = word + " id:" + uniqueID
             }
 
-
-            prev = word
-
         } else {
             Toast.makeText(
                 requireContext(),

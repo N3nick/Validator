@@ -3,6 +3,7 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
+        <device id="pixel" />
         <device id="tv_1080p" />
       </config>
     </shared>
@@ -17,20 +18,28 @@
   <component name="ChangeListManager">
     <list default="true" id="4533443b-8f87-4d57-8918-27551d5cb090" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/google/mlkit/codelab/translate/analyzer/TextAnalyzer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/google/mlkit/codelab/translate/analyzer/TextAnalyzer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/google/mlkit/codelab/translate/main/MainFragment$detectTextFromImage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/google/mlkit/codelab/translate/main/MainFragment$detectTextFromImage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/google/mlkit/codelab/translate/main/MainFragment$detectTextFromImage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/google/mlkit/codelab/translate/main/MainFragment$detectTextFromImage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/google/mlkit/codelab/translate/main/MainFragment$verifyText$jsonObjectRequest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/google/mlkit/codelab/translate/main/MainFragment$verifyText$jsonObjectRequest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/google/mlkit/codelab/translate/main/MainFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/google/mlkit/codelab/translate/main/MainFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/google/mlkit/codelab/translate/main/barcode/BarcodeFragment$onViewCreated$$inlined$apply$lambda$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/google/mlkit/codelab/translate/main/barcode/BarcodeFragment$onViewCreated$$inlined$apply$lambda$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/google/mlkit/codelab/translate/main/barcode/BarcodeFragment$onViewCreated$$inlined$apply$lambda$2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/google/mlkit/codelab/translate/main/barcode/BarcodeFragment$onViewCreated$$inlined$apply$lambda$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/google/mlkit/codelab/translate/main/barcode/BarcodeFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/google/mlkit/codelab/translate/main/barcode/BarcodeFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/google/mlkit/codelab/translate/main/MainFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/google/mlkit/codelab/translate/main/MainFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/google/mlkit/codelab/translate/main/barcode/BarcodeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/google/mlkit/codelab/translate/main/barcode/BarcodeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_barcode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_barcode.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[2115e6ed36017ece]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -182,25 +191,29 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="509" y="16" key="#app/0.0.1600.860@0.0.1600.860" timestamp="1623326154186" />
-    <state x="1044" y="220" key="AndroidCreateXmlResourceDialog" timestamp="1623728078514">
+    <state x="380" y="185" key="AndroidCreateResourceDirectoryDialog" timestamp="1623731908310">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="1044" y="220" key="AndroidCreateXmlResourceDialog/0.0.1600.860@0.0.1600.860" timestamp="1623728078514" />
-    <state width="1557" height="618" key="GridCell.Tab.0.bottom" timestamp="1623730265400">
+    <state x="380" y="185" key="AndroidCreateResourceDirectoryDialog/0.0.1600.860@0.0.1600.860" timestamp="1623731908310" />
+    <state x="1044" y="220" key="AndroidCreateXmlResourceDialog" timestamp="1623738995834">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="618" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623730265400" />
-    <state width="1557" height="618" key="GridCell.Tab.0.center" timestamp="1623730265400">
+    <state x="1044" y="220" key="AndroidCreateXmlResourceDialog/0.0.1600.860@0.0.1600.860" timestamp="1623738995834" />
+    <state width="1557" height="618" key="GridCell.Tab.0.bottom" timestamp="1623738673155">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="618" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1623730265400" />
-    <state width="1557" height="618" key="GridCell.Tab.0.left" timestamp="1623730265400">
+    <state width="1557" height="618" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623738673155" />
+    <state width="1557" height="618" key="GridCell.Tab.0.center" timestamp="1623738673154">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="618" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1623730265400" />
-    <state width="1557" height="618" key="GridCell.Tab.0.right" timestamp="1623730265400">
+    <state width="1557" height="618" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1623738673154" />
+    <state width="1557" height="618" key="GridCell.Tab.0.left" timestamp="1623738673154">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="618" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1623730265400" />
+    <state width="1557" height="618" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1623738673154" />
+    <state width="1557" height="618" key="GridCell.Tab.0.right" timestamp="1623738673154">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="618" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1623738673154" />
   </component>
 </project>

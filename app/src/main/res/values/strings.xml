@@ -28,4 +28,5 @@
     <string name="title_face">Face</string>
     <string name="title_translate">Scan Text</string>
     <string name="check_connection">Please check your Network Connection!</string>
+    <string name="focus_camera_on_barcode_to_enable_autoscanning">Focus Camera on Barcode To enable autoscanning</string>
 </resources>

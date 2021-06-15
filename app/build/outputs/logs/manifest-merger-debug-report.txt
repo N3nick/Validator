@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-38:12
+ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-39:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\4b6f6d5c1c92a2240a9917e4c1ee5003\navigation-ui-ktx-2.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\6b88b0a72ab4be9718373144616d6c82\navigation-ui-2.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3b85378c633613eefa814faf17b88b81\material-1.2.1\AndroidManifest.xml:17:1-24:12
@@ -99,20 +99,20 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\518a55e889e87319f61329d3c5eef5d6\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\9cef938cbcf1af2b9fb104b327498dc1\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\b1fbf01af9c7f78e0b22ebdac7521298\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-39:12
 	package
 		ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-38:12
+		ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-39:12
 		INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-38:12
+		ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:1-39:12
 		INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:2:11-69
@@ -155,7 +155,7 @@ ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\Andr
 	android:name
 		ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:10:19-57
 application
-ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:13:5-36:19
+ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:13:5-37:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3b85378c633613eefa814faf17b88b81\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3b85378c633613eefa814faf17b88b81\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\e2dbd52fa1b5abfb308d89dbf98050fc\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -253,15 +253,17 @@ ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\Andr
 	android:name
 		ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:26:27-74
 activity#com.google.mlkit.codelab.translate.MainActivity
-ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:30:9-32:20
+ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:30:9-33:20
+	android:screenOrientation
+		ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:32:13-49
 	android:name
 		ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:31:13-41
 meta-data#com.google.ml.vision.DEPENDENCIES
-ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:33:9-35:35
+ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:34:9-36:35
 	android:value
-		ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:35:13-32
+		ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:36:13-32
 	android:name
-		ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:34:13-61
+		ADDED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:35:13-61
 uses-sdk
 INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml
