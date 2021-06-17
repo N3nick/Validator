@@ -79,7 +79,6 @@ class BarcodeFragment : Fragment() {
         }
 
 
-
     }
 
     private fun doTicketVerification() {
@@ -91,13 +90,13 @@ class BarcodeFragment : Fragment() {
                 getString(R.string.check_connection),
                 Toast.LENGTH_SHORT
             ).show()
-        }else if (word.isEmpty()) {
+        } else if (word.isEmpty()) {
             Toast.makeText(
                 requireContext(),
                 "No word has been detected, Please Ensure to take a clear Image",
                 Toast.LENGTH_SHORT
             ).show()
-        } else if (word.startsWith("#")) {
+        } else {
             progressBar.startLoading(requireContext())
             // Instantiate the RequestQueue.
             //var uniqueID = UUID.fromString("313701fc-c222-488d-b9c9-432237413155")
@@ -138,13 +137,13 @@ class BarcodeFragment : Fragment() {
                 //  result.value = word + " id:" + uniqueID
             }
 
-        } else {
+        } /*else {
             Toast.makeText(
                 requireContext(),
                 "Invalid Ticket",
                 Toast.LENGTH_SHORT
             ).show()
-        }
+        }*/
     }
 
     private fun initiateCodeScanner() {
@@ -178,12 +177,12 @@ class BarcodeFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-            codeScanner.startPreview()
+        codeScanner.startPreview()
     }
 
     override fun onPause() {
         super.onPause()
-            codeScanner.releaseResources()
+        codeScanner.releaseResources()
     }
 
     fun getVolleyError(error: VolleyError): String {
