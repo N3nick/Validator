@@ -1,6 +1,8 @@
 package com.google.mlkit.codelab.translate.main.barcode
 
 import MySingleton
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.view.Gravity
@@ -40,6 +42,8 @@ class BarcodeFragment : Fragment() {
     private lateinit var bar : View
     var word = ""
     val progressBar = Loading()
+    var uniqueID : String? = ""
+    var bASE_URL : String? = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -57,7 +61,15 @@ class BarcodeFragment : Fragment() {
         startAnimation()
         initiateCodeScanner()
 
+        loadSharedPreferences()
 
+
+    }
+
+    private fun loadSharedPreferences() {
+        val sharedPreferences : SharedPreferences = requireActivity().getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
+        bASE_URL = sharedPreferences.getString("URL_KEY", "https://demo.ticketano.com/ticket-boarding")
+        uniqueID = sharedPreferences.getString("DEVICE_KEY", "1aac75011bf30e06fa9e06c973a28234")
     }
 
     private fun startAnimation() {
@@ -79,6 +91,10 @@ class BarcodeFragment : Fragment() {
 
     private fun doTicketVerification() {
         //check if any word has been detected
+        //stop the codeScanner
+        codeScanner.releaseResources()
+        //remove the scanning animation
+        bar.visibility = View.GONE
         if (!DetectConnection().isInternetAvailable(requireContext())) {
             //check for internet connection
             Toast.makeText(
@@ -94,8 +110,8 @@ class BarcodeFragment : Fragment() {
             ).show()
         } else {
             progressBar.startLoading(requireContext())
-            val uniqueID = "1aac75011bf30e06fa9e06c973a28234"
-            val bASE_URL = "https://demo.ticketano.com/ticket-boarding"
+           /* val uniqueID = "1aac75011bf30e06fa9e06c973a28234"
+            val bASE_URL = "https://demo.ticketano.com/ticket-boarding"*/
             val url = bASE_URL + "?device_id=" + uniqueID + "&ticket_number=" + word
             var prev = "null"
 
@@ -104,10 +120,6 @@ class BarcodeFragment : Fragment() {
                 val stringRequest = StringRequest(
                     Request.Method.GET, url, {
                         progressBar.endLoading()
-                        //stop the codeScanner
-                        codeScanner.releaseResources()
-                        //remove the scanning animation
-                        bar.visibility = View.GONE
                         val responseResult = it.toString()
                         try {
                             val responseObject = JSONObject(responseResult)
@@ -127,9 +139,9 @@ class BarcodeFragment : Fragment() {
                                 override fun onClick(dialog: AestheticDialog.Builder) {
                                     dialog.dismiss()
                                     //stop the codeScanner
-                                    codeScanner.releaseResources()
+                                    codeScanner.startPreview()
                                     //remove the scanning animation
-                                    bar.visibility = View.GONE
+                                    bar.visibility = View.VISIBLE
                                 }
                             }).show()
 
@@ -146,8 +158,6 @@ class BarcodeFragment : Fragment() {
                         val statusCode = it.networkResponse.statusCode.toString()
                         Log.d("ERROR12", statusCode)
                         if (it.networkResponse.data != null) {
-                            codeScanner.releaseResources()
-                            bar.visibility = View.GONE
                             try {
                                 body = String(it.networkResponse.data, charset("UTF-8"))
 
@@ -169,9 +179,9 @@ class BarcodeFragment : Fragment() {
                                     override fun onClick(dialog: AestheticDialog.Builder) {
                                         dialog.dismiss()
                                         //stop the codeScanner
-                                        codeScanner.releaseResources()
+                                        codeScanner.startPreview()
                                         //remove the scanning animation
-                                        bar.visibility = View.GONE
+                                        bar.visibility = View.VISIBLE
                                     }
                                 }).show()
                             } catch (e: UnsupportedEncodingException) {
@@ -203,8 +213,8 @@ class BarcodeFragment : Fragment() {
 
             decodeCallback = DecodeCallback {
                 activity?.runOnUiThread {
-                    doTicketVerification()
                     word = it.text
+                    doTicketVerification()
                 }
             }
 

@@ -26,8 +26,7 @@
         android:layout_margin="30dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:background="@color/colorPrimary"
-        android:src="@mipmap/ic_launcher"/>
+        android:background="@color/colorPrimary" />
 
 
 

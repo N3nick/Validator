@@ -1583,8 +1583,10 @@ drawable drake_success
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable greyscale_regular_3x
+drawable ic_back_button
 drawable ic_barcode_24px
 drawable ic_baseline_image_24
+drawable ic_baseline_settings_24
 drawable ic_cancel
 drawable ic_check_circle_green_24dp
 drawable ic_close_gray_24dp
@@ -1729,6 +1731,7 @@ id async
 id auto
 id back
 id bar
+id bar1
 id barrier
 id beginning
 id blocking
@@ -1773,6 +1776,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id deviceIdEt
 id dialog_button
 id dialog_frame_flash
 id dialog_frame_flat
@@ -1872,6 +1876,7 @@ id list_item
 id main
 id masked
 id media_actions
+id menu_settings
 id message
 id middle
 id mini
@@ -1939,6 +1944,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id save_button
 id save_non_transition_alpha
 id save_overlay_view
 id scale
@@ -2005,6 +2011,8 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView2
+id textView3
 id text_
 id text_display
 id text_input_end_icon
@@ -2041,6 +2049,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id urlEt
 id useLogo
 id vertical_view_toaster
 id video
@@ -2118,6 +2127,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main_nav
+layout activity_settings
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2210,6 +2220,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu bottom_nav_menu
+menu toolbar_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation mobile_navigation
@@ -2335,6 +2346,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
 string search_menu_title
+string settings
 string status_bar_notification_info_overflow
 string success
 string title_activity_main_nav
@@ -2351,6 +2363,7 @@ style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
 style AppTheme
+style AppTheme1
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog

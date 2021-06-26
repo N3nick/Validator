@@ -2,7 +2,9 @@ package com.google.mlkit.codelab.translate.main
 
 import MySingleton
 import android.content.ActivityNotFoundException
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
@@ -53,6 +55,8 @@ class MainFragment : Fragment() {
     private lateinit var container: ViewGroup
     val progressBar = Loading()
     var word = ""
+    var uniqueID : String? = ""
+    var bASE_URL : String? = ""
 
 
     override fun onCreateView(
@@ -88,6 +92,12 @@ class MainFragment : Fragment() {
         }
     }
 
+    private fun loadSharedPreferences() {
+        val sharedPreferences : SharedPreferences = requireActivity().getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
+        bASE_URL = sharedPreferences.getString("URL_KEY", "https://demo.ticketano.com/ticket-boarding")
+        uniqueID = sharedPreferences.getString("DEVICE_KEY", "1aac75011bf30e06fa9e06c973a28234")
+    }
+
     private fun verifyText() {
         //check if any word has been detected
         if (!DetectConnection().isInternetAvailable(requireContext())) {
@@ -105,8 +115,8 @@ class MainFragment : Fragment() {
             ).show()
         } else {
             progressBar.startLoading(requireContext())
-            val uniqueID = "1aac75011bf30e06fa9e06c973a28234"
-            val bASE_URL = "https://demo.ticketano.com/ticket-boarding"
+           /* val uniqueID = "1aac75011bf30e06fa9e06c973a28234"
+            val bASE_URL = "https://demo.ticketano.com/ticket-boarding"*/
             val url = bASE_URL + "?device_id=" + uniqueID + "&ticket_number=" + word
             var prev = "null"
 

@@ -27,11 +27,11 @@
 15-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:9:22-72
 16
 17    <uses-feature
-17-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:10:5-11:35
+17-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:11:5-13:35
 18        android:name="android.hardware.camera"
-18-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:10:19-57
+18-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:12:9-47
 19        android:required="true" />
-19-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:11:9-32
+19-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:13:9-32
 20
 21    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
 21-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:22:5-67
@@ -41,243 +41,251 @@
 22-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:26:22-79
 23
 24    <application
-24-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:13:5-37:19
+24-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:15:5-41:19
 25        android:allowBackup="true"
-25-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:14:9-35
+25-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:16:9-35
 26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 26-->[androidx.core:core:1.3.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\33fc8f7965987a3957a83110f726f72f\core-1.3.2\AndroidManifest.xml:24:18-86
 27        android:debuggable="true"
 28        android:icon="@mipmap/ic_launcher"
-28-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:15:9-43
+28-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:17:9-43
 29        android:label="@string/app_name"
-29-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:16:9-41
+29-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:18:9-41
 30        android:roundIcon="@mipmap/ic_launcher_round"
-30-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:17:9-54
+30-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:19:9-54
 31        android:supportsRtl="true"
-31-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:18:9-35
+31-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:20:9-35
 32        android:testOnly="true"
 33        android:theme="@style/AppTheme" >
-33-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:19:9-40
+33-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:21:9-40
 34        <activity
-34-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:20:9-29:20
-35            android:name="com.google.mlkit.codelab.translate.MainActivityNav"
-35-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:21:13-44
-36            android:screenOrientation="portrait" >
-36-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:22:13-49
-37            <intent-filter>
-37-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:23:13-27:29
-38                <action android:name="android.intent.action.MAIN" />
-38-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:24:17-69
-38-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:24:25-66
-39
-40                <category android:name="android.intent.category.LAUNCHER" />
-40-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:26:17-77
-40-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:26:27-74
-41            </intent-filter>
-42        </activity>
-43        <activity
-43-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:30:9-33:20
-44            android:name="com.google.mlkit.codelab.translate.MainActivity"
-44-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:31:13-41
-45            android:screenOrientation="portrait" >
-45-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:32:13-49
-46        </activity> <!-- Automatically download the text recognition model after app install -->
-47        <meta-data
-47-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:34:9-36:35
-48            android:name="com.google.ml.vision.DEPENDENCIES"
-48-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:35:13-61
-49            android:value="ocr" />
-49-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:36:13-32
-50
-51        <service
-51-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\905d8d8c03636d3b5b36fd060cabfc62\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:9:9-15:19
-52            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
-52-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\905d8d8c03636d3b5b36fd060cabfc62\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:10:13-91
-53            android:directBootAware="true"
-53-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:17:13-43
-54            android:exported="false" >
-54-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\905d8d8c03636d3b5b36fd060cabfc62\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:11:13-37
-55            <meta-data
-55-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\905d8d8c03636d3b5b36fd060cabfc62\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:12:13-14:85
-56                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
-56-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\905d8d8c03636d3b5b36fd060cabfc62\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:13:17-114
-57                android:value="com.google.firebase.components.ComponentRegistrar" />
-57-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\905d8d8c03636d3b5b36fd060cabfc62\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:14:17-82
-58            <meta-data
-58-->[com.google.mlkit:language-id:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1722ec7aae19c97a31ffdd6265c50307\jetified-language-id-16.1.1\AndroidManifest.xml:11:13-13:85
-59                android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.LanguageIdRegistrar"
-59-->[com.google.mlkit:language-id:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1722ec7aae19c97a31ffdd6265c50307\jetified-language-id-16.1.1\AndroidManifest.xml:12:17-113
-60                android:value="com.google.firebase.components.ComponentRegistrar" />
-60-->[com.google.mlkit:language-id:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1722ec7aae19c97a31ffdd6265c50307\jetified-language-id-16.1.1\AndroidManifest.xml:13:17-82
-61            <meta-data
-61-->[com.google.mlkit:translate:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2005f244a626dfcdbeb16f8b914a09b\jetified-translate-16.1.1\AndroidManifest.xml:11:13-13:85
-62                android:name="com.google.firebase.components:com.google.mlkit.nl.translate.NaturalLanguageTranslateRegistrar"
-62-->[com.google.mlkit:translate:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2005f244a626dfcdbeb16f8b914a09b\jetified-translate-16.1.1\AndroidManifest.xml:12:17-126
-63                android:value="com.google.firebase.components.ComponentRegistrar" />
-63-->[com.google.mlkit:translate:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2005f244a626dfcdbeb16f8b914a09b\jetified-translate-16.1.1\AndroidManifest.xml:13:17-82
-64            <meta-data
-64-->[com.google.mlkit:translate:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2005f244a626dfcdbeb16f8b914a09b\jetified-translate-16.1.1\AndroidManifest.xml:14:13-16:85
-65                android:name="com.google.firebase.components:com.google.mlkit.nl.translate.RemoteConfigRegistrar"
-65-->[com.google.mlkit:translate:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2005f244a626dfcdbeb16f8b914a09b\jetified-translate-16.1.1\AndroidManifest.xml:15:17-114
-66                android:value="com.google.firebase.components.ComponentRegistrar" />
-66-->[com.google.mlkit:translate:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2005f244a626dfcdbeb16f8b914a09b\jetified-translate-16.1.1\AndroidManifest.xml:16:17-82
-67            <meta-data
-67-->[com.google.android.gms:play-services-mlkit-face-detection:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\995c4fe13b0c9ac2ed870db1133d4cd2\jetified-play-services-mlkit-face-detection-16.1.1\AndroidManifest.xml:12:13-14:85
-68                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
-68-->[com.google.android.gms:play-services-mlkit-face-detection:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\995c4fe13b0c9ac2ed870db1133d4cd2\jetified-play-services-mlkit-face-detection-16.1.1\AndroidManifest.xml:13:17-114
-69                android:value="com.google.firebase.components.ComponentRegistrar" />
-69-->[com.google.android.gms:play-services-mlkit-face-detection:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\995c4fe13b0c9ac2ed870db1133d4cd2\jetified-play-services-mlkit-face-detection-16.1.1\AndroidManifest.xml:14:17-82
-70            <meta-data
-70-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\650aca400a351c9573f3e35a3d24a3b4\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:12:13-14:85
-71                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
-71-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\650aca400a351c9573f3e35a3d24a3b4\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:13:17-120
-72                android:value="com.google.firebase.components.ComponentRegistrar" />
-72-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\650aca400a351c9573f3e35a3d24a3b4\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:14:17-82
-73            <meta-data
-73-->[com.google.mlkit:vision-common:16.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\4a551c34cdf22d7134efb87d4a691c4c\jetified-vision-common-16.1.0\AndroidManifest.xml:12:13-14:85
-74                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
-74-->[com.google.mlkit:vision-common:16.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\4a551c34cdf22d7134efb87d4a691c4c\jetified-vision-common-16.1.0\AndroidManifest.xml:13:17-124
-75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[com.google.mlkit:vision-common:16.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\4a551c34cdf22d7134efb87d4a691c4c\jetified-vision-common-16.1.0\AndroidManifest.xml:14:17-82
-76            <meta-data
-76-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:20:13-22:85
-77                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
-77-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:21:17-120
-78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:22:17-82
-79        </service>
-80        <service
-80-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3740fb8d5495fcf685144fcb40c40288\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:9:9-15:19
-81            android:name="com.google.firebase.components.ComponentDiscoveryService"
-81-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3740fb8d5495fcf685144fcb40c40288\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:10:13-84
-82            android:directBootAware="true"
-82-->[com.google.firebase:firebase-common:19.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\f206007c04b5f344f566b620984ebe66\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-83            android:exported="false" >
-83-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3740fb8d5495fcf685144fcb40c40288\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:11:13-37
-84            <meta-data
-84-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3740fb8d5495fcf685144fcb40c40288\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:12:13-14:85
-85                android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar"
-85-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3740fb8d5495fcf685144fcb40c40288\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:13:17-108
-86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3740fb8d5495fcf685144fcb40c40288\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:14:17-82
-87            <meta-data
-87-->[com.google.firebase:firebase-ml-common:22.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\446cf303e2b75c7e8530c3388168d8c0\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:11:13-13:85
-88                android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar"
-88-->[com.google.firebase:firebase-ml-common:22.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\446cf303e2b75c7e8530c3388168d8c0\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:12:17-117
-89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->[com.google.firebase:firebase-ml-common:22.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\446cf303e2b75c7e8530c3388168d8c0\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:13:17-82
-90            <meta-data
-90-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:32:13-34:85
-91                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-91-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:33:17-96
-92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:34:17-82
-93            <meta-data
-93-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a882272a744b9dbe19972643c7e6a415\jetified-firebase-installations-16.2.1\AndroidManifest.xml:17:13-19:85
-94                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-94-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a882272a744b9dbe19972643c7e6a415\jetified-firebase-installations-16.2.1\AndroidManifest.xml:18:17-127
-95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a882272a744b9dbe19972643c7e6a415\jetified-firebase-installations-16.2.1\AndroidManifest.xml:19:17-82
-96        </service>
-97
-98        <provider
-98-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:9:9-13:38
-99            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
-99-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:10:13-78
-100            android:authorities="com.google.mlkit.codelab.translate.mlkitinitprovider"
-100-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:11:13-69
-101            android:exported="false"
-101-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:12:13-37
-102            android:initOrder="99" />
-102-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:13:13-35
-103
-104        <receiver
-104-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:7-26:18
-105            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-105-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:17-89
-106            android:enabled="true"
-106-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:90-112
-107            android:exported="false" >
-107-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:113-137
-108        </receiver>
-109        <receiver
-109-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:7-31:18
-110            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-110-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:17-104
-111            android:enabled="true"
-111-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:162-184
-112            android:permission="android.permission.INSTALL_PACKAGES" >
-112-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:105-161
-113            <intent-filter>
-113-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:28:11-30:27
-114                <action android:name="com.android.vending.INSTALL_REFERRER" />
-114-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:29:15-76
-114-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:29:23-74
-115            </intent-filter>
-116        </receiver>
-117
-118        <service
-118-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:7-137
-119            android:name="com.google.android.gms.measurement.AppMeasurementService"
-119-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:16-87
-120            android:enabled="true"
-120-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:88-110
-121            android:exported="false" />
-121-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:111-135
-122
-123        <receiver
-123-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:37:9-44:20
-124            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-124-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:38:13-78
-125            android:exported="true"
-125-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:39:13-36
-126            android:permission="com.google.android.c2dm.permission.SEND" >
-126-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:40:13-73
-127            <intent-filter>
-127-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:41:13-43:29
-128                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-128-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:42:17-81
-128-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:42:25-78
-129            </intent-filter>
-130        </receiver>
-131
-132        <activity
-132-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2357b003d1dc53f0dc3d4109174a298\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-133            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-133-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2357b003d1dc53f0dc3d4109174a298\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-134            android:exported="false"
-134-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2357b003d1dc53f0dc3d4109174a298\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-135            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-135-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2357b003d1dc53f0dc3d4109174a298\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-136
-137        <provider
-137-->[com.google.firebase:firebase-common:19.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\f206007c04b5f344f566b620984ebe66\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-138            android:name="com.google.firebase.provider.FirebaseInitProvider"
-138-->[com.google.firebase:firebase-common:19.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\f206007c04b5f344f566b620984ebe66\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-139            android:authorities="com.google.mlkit.codelab.translate.firebaseinitprovider"
-139-->[com.google.firebase:firebase-common:19.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\f206007c04b5f344f566b620984ebe66\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-140            android:exported="false"
-140-->[com.google.firebase:firebase-common:19.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\f206007c04b5f344f566b620984ebe66\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-141            android:initOrder="100" />
-141-->[com.google.firebase:firebase-common:19.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\f206007c04b5f344f566b620984ebe66\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-142
-143        <meta-data
-143-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\b0a2e7c2b2fc441a6fb7438a9d0db41d\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-144            android:name="com.google.android.gms.version"
-144-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\b0a2e7c2b2fc441a6fb7438a9d0db41d\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-145            android:value="@integer/google_play_services_version" />
-145-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\b0a2e7c2b2fc441a6fb7438a9d0db41d\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+34-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:22:9-23:47
+35            android:name="com.google.mlkit.codelab.translate.settings.SettingsActivity"
+35-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:22:19-60
+36            android:theme="@style/AppTheme1" />
+36-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:23:13-45
+37        <activity
+37-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:24:9-33:20
+38            android:name="com.google.mlkit.codelab.translate.MainActivityNav"
+38-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:25:13-44
+39            android:screenOrientation="portrait"
+39-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:26:13-49
+40            android:theme="@style/AppTheme1" >
+40-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:27:13-45
+41            <intent-filter>
+41-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:28:13-32:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:29:17-69
+42-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:29:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:31:17-77
+44-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:31:27-74
+45            </intent-filter>
+46        </activity>
+47        <activity
+47-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:34:9-37:20
+48            android:name="com.google.mlkit.codelab.translate.MainActivity"
+48-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:35:13-41
+49            android:screenOrientation="portrait" >
+49-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:36:13-49
+50        </activity> <!-- Automatically download the text recognition model after app install -->
+51        <meta-data
+51-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:38:9-40:35
+52            android:name="com.google.ml.vision.DEPENDENCIES"
+52-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:39:13-61
+53            android:value="ocr" />
+53-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:40:13-32
+54
+55        <service
+55-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\905d8d8c03636d3b5b36fd060cabfc62\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:9:9-15:19
+56            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+56-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\905d8d8c03636d3b5b36fd060cabfc62\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:10:13-91
+57            android:directBootAware="true"
+57-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:17:13-43
+58            android:exported="false" >
+58-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\905d8d8c03636d3b5b36fd060cabfc62\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:11:13-37
+59            <meta-data
+59-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\905d8d8c03636d3b5b36fd060cabfc62\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:12:13-14:85
+60                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+60-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\905d8d8c03636d3b5b36fd060cabfc62\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:13:17-114
+61                android:value="com.google.firebase.components.ComponentRegistrar" />
+61-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\905d8d8c03636d3b5b36fd060cabfc62\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:14:17-82
+62            <meta-data
+62-->[com.google.mlkit:language-id:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1722ec7aae19c97a31ffdd6265c50307\jetified-language-id-16.1.1\AndroidManifest.xml:11:13-13:85
+63                android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.LanguageIdRegistrar"
+63-->[com.google.mlkit:language-id:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1722ec7aae19c97a31ffdd6265c50307\jetified-language-id-16.1.1\AndroidManifest.xml:12:17-113
+64                android:value="com.google.firebase.components.ComponentRegistrar" />
+64-->[com.google.mlkit:language-id:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1722ec7aae19c97a31ffdd6265c50307\jetified-language-id-16.1.1\AndroidManifest.xml:13:17-82
+65            <meta-data
+65-->[com.google.mlkit:translate:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2005f244a626dfcdbeb16f8b914a09b\jetified-translate-16.1.1\AndroidManifest.xml:11:13-13:85
+66                android:name="com.google.firebase.components:com.google.mlkit.nl.translate.NaturalLanguageTranslateRegistrar"
+66-->[com.google.mlkit:translate:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2005f244a626dfcdbeb16f8b914a09b\jetified-translate-16.1.1\AndroidManifest.xml:12:17-126
+67                android:value="com.google.firebase.components.ComponentRegistrar" />
+67-->[com.google.mlkit:translate:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2005f244a626dfcdbeb16f8b914a09b\jetified-translate-16.1.1\AndroidManifest.xml:13:17-82
+68            <meta-data
+68-->[com.google.mlkit:translate:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2005f244a626dfcdbeb16f8b914a09b\jetified-translate-16.1.1\AndroidManifest.xml:14:13-16:85
+69                android:name="com.google.firebase.components:com.google.mlkit.nl.translate.RemoteConfigRegistrar"
+69-->[com.google.mlkit:translate:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2005f244a626dfcdbeb16f8b914a09b\jetified-translate-16.1.1\AndroidManifest.xml:15:17-114
+70                android:value="com.google.firebase.components.ComponentRegistrar" />
+70-->[com.google.mlkit:translate:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2005f244a626dfcdbeb16f8b914a09b\jetified-translate-16.1.1\AndroidManifest.xml:16:17-82
+71            <meta-data
+71-->[com.google.android.gms:play-services-mlkit-face-detection:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\995c4fe13b0c9ac2ed870db1133d4cd2\jetified-play-services-mlkit-face-detection-16.1.1\AndroidManifest.xml:12:13-14:85
+72                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+72-->[com.google.android.gms:play-services-mlkit-face-detection:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\995c4fe13b0c9ac2ed870db1133d4cd2\jetified-play-services-mlkit-face-detection-16.1.1\AndroidManifest.xml:13:17-114
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[com.google.android.gms:play-services-mlkit-face-detection:16.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\995c4fe13b0c9ac2ed870db1133d4cd2\jetified-play-services-mlkit-face-detection-16.1.1\AndroidManifest.xml:14:17-82
+74            <meta-data
+74-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\650aca400a351c9573f3e35a3d24a3b4\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:12:13-14:85
+75                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+75-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\650aca400a351c9573f3e35a3d24a3b4\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:13:17-120
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\650aca400a351c9573f3e35a3d24a3b4\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:14:17-82
+77            <meta-data
+77-->[com.google.mlkit:vision-common:16.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\4a551c34cdf22d7134efb87d4a691c4c\jetified-vision-common-16.1.0\AndroidManifest.xml:12:13-14:85
+78                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+78-->[com.google.mlkit:vision-common:16.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\4a551c34cdf22d7134efb87d4a691c4c\jetified-vision-common-16.1.0\AndroidManifest.xml:13:17-124
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.mlkit:vision-common:16.1.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\4a551c34cdf22d7134efb87d4a691c4c\jetified-vision-common-16.1.0\AndroidManifest.xml:14:17-82
+80            <meta-data
+80-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:20:13-22:85
+81                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+81-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:21:17-120
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:22:17-82
+83        </service>
+84        <service
+84-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3740fb8d5495fcf685144fcb40c40288\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:9:9-15:19
+85            android:name="com.google.firebase.components.ComponentDiscoveryService"
+85-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3740fb8d5495fcf685144fcb40c40288\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:10:13-84
+86            android:directBootAware="true"
+86-->[com.google.firebase:firebase-common:19.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\f206007c04b5f344f566b620984ebe66\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+87            android:exported="false" >
+87-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3740fb8d5495fcf685144fcb40c40288\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:11:13-37
+88            <meta-data
+88-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3740fb8d5495fcf685144fcb40c40288\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:12:13-14:85
+89                android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar"
+89-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3740fb8d5495fcf685144fcb40c40288\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:13:17-108
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\3740fb8d5495fcf685144fcb40c40288\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:14:17-82
+91            <meta-data
+91-->[com.google.firebase:firebase-ml-common:22.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\446cf303e2b75c7e8530c3388168d8c0\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:11:13-13:85
+92                android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar"
+92-->[com.google.firebase:firebase-ml-common:22.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\446cf303e2b75c7e8530c3388168d8c0\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:12:17-117
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.firebase:firebase-ml-common:22.1.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\446cf303e2b75c7e8530c3388168d8c0\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:13:17-82
+94            <meta-data
+94-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:32:13-34:85
+95                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+95-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:33:17-96
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:34:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a882272a744b9dbe19972643c7e6a415\jetified-firebase-installations-16.2.1\AndroidManifest.xml:17:13-19:85
+98                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+98-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a882272a744b9dbe19972643c7e6a415\jetified-firebase-installations-16.2.1\AndroidManifest.xml:18:17-127
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\a882272a744b9dbe19972643c7e6a415\jetified-firebase-installations-16.2.1\AndroidManifest.xml:19:17-82
+100        </service>
+101
+102        <provider
+102-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:9:9-13:38
+103            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+103-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:10:13-78
+104            android:authorities="com.google.mlkit.codelab.translate.mlkitinitprovider"
+104-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:11:13-69
+105            android:exported="false"
+105-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:12:13-37
+106            android:initOrder="99" />
+106-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:13:13-35
+107
+108        <receiver
+108-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:7-26:18
+109            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+109-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:17-89
+110            android:enabled="true"
+110-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:90-112
+111            android:exported="false" >
+111-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:113-137
+112        </receiver>
+113        <receiver
+113-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:7-31:18
+114            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+114-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:17-104
+115            android:enabled="true"
+115-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:162-184
+116            android:permission="android.permission.INSTALL_PACKAGES" >
+116-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:105-161
+117            <intent-filter>
+117-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:28:11-30:27
+118                <action android:name="com.android.vending.INSTALL_REFERRER" />
+118-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:29:15-76
+118-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:29:23-74
+119            </intent-filter>
+120        </receiver>
+121
+122        <service
+122-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:7-137
+123            android:name="com.google.android.gms.measurement.AppMeasurementService"
+123-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:16-87
+124            android:enabled="true"
+124-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:88-110
+125            android:exported="false" />
+125-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:111-135
+126
+127        <receiver
+127-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:37:9-44:20
+128            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+128-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:38:13-78
+129            android:exported="true"
+129-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:39:13-36
+130            android:permission="com.google.android.c2dm.permission.SEND" >
+130-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:40:13-73
+131            <intent-filter>
+131-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:41:13-43:29
+132                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+132-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:42:17-81
+132-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:42:25-78
+133            </intent-filter>
+134        </receiver>
+135
+136        <activity
+136-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2357b003d1dc53f0dc3d4109174a298\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+137            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+137-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2357b003d1dc53f0dc3d4109174a298\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+138            android:exported="false"
+138-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2357b003d1dc53f0dc3d4109174a298\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+139            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+139-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d2357b003d1dc53f0dc3d4109174a298\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+140
+141        <provider
+141-->[com.google.firebase:firebase-common:19.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\f206007c04b5f344f566b620984ebe66\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+142            android:name="com.google.firebase.provider.FirebaseInitProvider"
+142-->[com.google.firebase:firebase-common:19.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\f206007c04b5f344f566b620984ebe66\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+143            android:authorities="com.google.mlkit.codelab.translate.firebaseinitprovider"
+143-->[com.google.firebase:firebase-common:19.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\f206007c04b5f344f566b620984ebe66\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+144            android:exported="false"
+144-->[com.google.firebase:firebase-common:19.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\f206007c04b5f344f566b620984ebe66\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+145            android:initOrder="100" />
+145-->[com.google.firebase:firebase-common:19.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\f206007c04b5f344f566b620984ebe66\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
 146
-147        <provider
-147-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\32964ca0a9f7fc28175ebab5e4f0bf30\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-148            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-148-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\32964ca0a9f7fc28175ebab5e4f0bf30\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-149            android:authorities="com.google.mlkit.codelab.translate.lifecycle-process"
-149-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\32964ca0a9f7fc28175ebab5e4f0bf30\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-150            android:exported="false"
-150-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\32964ca0a9f7fc28175ebab5e4f0bf30\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-151            android:multiprocess="true" />
-151-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\32964ca0a9f7fc28175ebab5e4f0bf30\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-152    </application>
-153
-154</manifest>
+147        <meta-data
+147-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\b0a2e7c2b2fc441a6fb7438a9d0db41d\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+148            android:name="com.google.android.gms.version"
+148-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\b0a2e7c2b2fc441a6fb7438a9d0db41d\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+149            android:value="@integer/google_play_services_version" />
+149-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\b0a2e7c2b2fc441a6fb7438a9d0db41d\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+150
+151        <provider
+151-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\32964ca0a9f7fc28175ebab5e4f0bf30\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+152            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+152-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\32964ca0a9f7fc28175ebab5e4f0bf30\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+153            android:authorities="com.google.mlkit.codelab.translate.lifecycle-process"
+153-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\32964ca0a9f7fc28175ebab5e4f0bf30\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+154            android:exported="false"
+154-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\32964ca0a9f7fc28175ebab5e4f0bf30\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+155            android:multiprocess="true" />
+155-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\32964ca0a9f7fc28175ebab5e4f0bf30\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+156    </application>
+157
+158</manifest>

@@ -94,5 +94,8 @@ dependencies {
     //aesthetic dialog library
     implementation 'com.github.gabriel-TheCode:AestheticDialogs:1.3.6'
 
+    //cropping
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.4.+'
+
 }
 

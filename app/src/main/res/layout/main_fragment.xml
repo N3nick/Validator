@@ -11,10 +11,10 @@
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_marginStart="10dp"
+        android:layout_height="350dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:src="@drawable/ic_baseline_image_24"
         android:layout_marginBottom="10dp" />
 
@@ -49,7 +49,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/btn_green_pressed"
+        android:backgroundTint="@color/colorPrimary"
         android:text="Capture Ticket Image"
         android:textColor="@android:color/white" />
 
@@ -62,7 +63,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="@android:color/holo_blue_dark"
+        android:background="@drawable/btn_blue_selector"
         android:text="Verify Ticket"
         android:textColor="@android:color/white" />
 
