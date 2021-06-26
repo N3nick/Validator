@@ -1,59 +1,43 @@
 package com.google.mlkit.codelab.translate.main.barcode
 
+import MySingleton
 import android.os.Bundle
-import android.util.DisplayMetrics
 import android.util.Log
-import androidx.fragment.app.Fragment
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
-import androidx.camera.core.*
-import androidx.camera.lifecycle.ProcessCameraProvider
-import androidx.camera.view.PreviewView
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContentProviderCompat.requireContext
-import androidx.core.content.ContextCompat
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
+import androidx.fragment.app.Fragment
 import com.android.volley.*
-import com.android.volley.toolbox.JsonObjectRequest
-import com.budiyev.android.codescanner.AutoFocusMode
-import com.budiyev.android.codescanner.CodeScanner
-import com.budiyev.android.codescanner.DecodeCallback
-import com.budiyev.android.codescanner.ErrorCallback
-import com.budiyev.android.codescanner.ScanMode
+import com.android.volley.toolbox.StringRequest
+import com.budiyev.android.codescanner.*
 import com.google.mlkit.codelab.translate.R
-import com.google.mlkit.codelab.translate.analyzer.BarcodeAnalyzer
 import com.google.mlkit.codelab.translate.util.DetectConnection
 import com.google.mlkit.codelab.translate.util.Loading
-import com.google.mlkit.codelab.translate.util.ScopedExecutor
+import com.thecode.aestheticdialogs.*
 import kotlinx.android.synthetic.main.fragment_barcode.*
-import kotlinx.android.synthetic.main.fragment_barcode.view.*
 import org.apache.http.conn.ConnectTimeoutException
 import org.json.JSONException
+import org.json.JSONObject
 import org.xmlpull.v1.XmlPullParserException
+import java.io.UnsupportedEncodingException
 import java.net.ConnectException
 import java.net.MalformedURLException
 import java.net.SocketException
 import java.net.SocketTimeoutException
-import java.util.concurrent.ExecutorService
-import java.util.concurrent.Executors
-import kotlin.math.abs
-import kotlin.math.ln
-import kotlin.math.max
-import kotlin.math.min
+
 
 class BarcodeFragment : Fragment() {
 
     private lateinit var codeScanner: CodeScanner
     private lateinit var container: ViewGroup
-    private lateinit var textView: TextView
-    private lateinit var scanButton: Button
-    private lateinit var verifyButton: Button
+    private lateinit var bar : View
     var word = ""
     val progressBar = Loading()
 
@@ -69,16 +53,28 @@ class BarcodeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         container = view as RelativeLayout
-        textView = container.findViewById(R.id.tv_textView)
-        verifyButton = container.findViewById(R.id.verify_btn)
+        bar = container.findViewById(R.id.bar)
+        startAnimation()
         initiateCodeScanner()
 
 
-        verifyButton.setOnClickListener {
-            doTicketVerification()
-        }
+    }
 
+    private fun startAnimation() {
+        val animation : Animation = AnimationUtils.loadAnimation(requireContext(), R.anim.scan_animation)
+        animation.setAnimationListener(object : Animation.AnimationListener{
+            override fun onAnimationStart(p0: Animation?) {
+            }
 
+            override fun onAnimationEnd(p0: Animation?) {
+                bar.visibility = View.GONE
+            }
+
+            override fun onAnimationRepeat(p0: Animation?) {
+            }
+
+        })
+        bar.startAnimation(animation)
     }
 
     private fun doTicketVerification() {
@@ -93,58 +89,104 @@ class BarcodeFragment : Fragment() {
         } else if (word.isEmpty()) {
             Toast.makeText(
                 requireContext(),
-                "No word has been detected, Please Ensure to take a clear Image",
+                "No BarCode has been detected, Please Scan Again",
                 Toast.LENGTH_SHORT
             ).show()
         } else {
             progressBar.startLoading(requireContext())
-            // Instantiate the RequestQueue.
-            //var uniqueID = UUID.fromString("313701fc-c222-488d-b9c9-432237413155")
-            val uniqueID = "a37c582b5b6c6b3267049f33cb674015"
-            val bASE_URL = "https://transport.palmkash.com/ticket-boarding"
+            val uniqueID = "1aac75011bf30e06fa9e06c973a28234"
+            val bASE_URL = "https://demo.ticketano.com/ticket-boarding"
             val url = bASE_URL + "?device_id=" + uniqueID + "&ticket_number=" + word
             var prev = "null"
 
             if (prev != word) {
                 // Request a string response from the provided URL.
-                val jsonObjectRequest = JsonObjectRequest(
-                    Request.Method.GET, url, null,
-                    { response ->
-                        // Display the first 500 characters of the response string.
+                val stringRequest = StringRequest(
+                    Request.Method.GET, url, {
                         progressBar.endLoading()
-                        val JSONObj = response.getString("message")
-                        Toast.makeText(
-                            requireContext(),
-                            "Response: %s".format(JSONObj),
-                            Toast.LENGTH_SHORT
-                        ).show()
-                        //  detectTv.text = "Response: %s".format(JSONObj)
-                    },
-                    { error ->
-                        //  result.value = getVolleyError(error)
+                        //stop the codeScanner
+                        codeScanner.releaseResources()
+                        //remove the scanning animation
+                        bar.visibility = View.GONE
+                        val responseResult = it.toString()
+                        try {
+                            val responseObject = JSONObject(responseResult)
+                            AestheticDialog.Builder(
+                                requireActivity(),
+                                DialogStyle.FLAT,
+                                DialogType.SUCCESS
+                            ).apply {
+                                setTitle("Success")
+                                setMessage(responseObject.getString("message"))
+                                setCancelable(false)
+                                setDarkMode(true)
+                                setGravity(Gravity.CENTER)
+                                setAnimation(DialogAnimation.SHRINK)
+
+                            }.setOnClickListener(object : OnDialogClickListener {
+                                override fun onClick(dialog: AestheticDialog.Builder) {
+                                    dialog.dismiss()
+                                    //stop the codeScanner
+                                    codeScanner.releaseResources()
+                                    //remove the scanning animation
+                                    bar.visibility = View.GONE
+                                }
+                            }).show()
+
+                        }catch (e : Exception){
+                            Log.d("ERROR1", e.message.toString())
+                        }
+
+                    }, {
+
                         progressBar.endLoading()
-                        Toast.makeText(
-                            requireContext(),
-                            getVolleyError(error),
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    })
 
-                // Add the request to the RequestQueue.
+                        var body: String?
+                        //get status code here
+                        val statusCode = it.networkResponse.statusCode.toString()
+                        Log.d("ERROR12", statusCode)
+                        if (it.networkResponse.data != null) {
+                            codeScanner.releaseResources()
+                            bar.visibility = View.GONE
+                            try {
+                                body = String(it.networkResponse.data, charset("UTF-8"))
 
+                                //converting response to json object
+                                val obj = JSONObject(body)
+                                AestheticDialog.Builder(
+                                    requireActivity(),
+                                    DialogStyle.FLAT,
+                                    DialogType.ERROR
+                                ).apply {
+                                    setTitle("Error")
+                                    setMessage(obj.getString("message"))
+                                    setCancelable(false)
+                                    setDarkMode(true)
+                                    setGravity(Gravity.CENTER)
+                                    setAnimation(DialogAnimation.SHRINK)
+
+                                }.setOnClickListener(object : OnDialogClickListener {
+                                    override fun onClick(dialog: AestheticDialog.Builder) {
+                                        dialog.dismiss()
+                                        //stop the codeScanner
+                                        codeScanner.releaseResources()
+                                        //remove the scanning animation
+                                        bar.visibility = View.GONE
+                                    }
+                                }).show()
+                            } catch (e: UnsupportedEncodingException) {
+                                Log.d("ERROR1", e.message.toString())
+                            }
+                        }
+                    }
+
+                )
                 MySingleton.getInstance(requireContext())
-                    .addToRequestQueue(jsonObjectRequest)
-                //  result.value = word + " id:" + uniqueID
+                    .addToRequestQueue(stringRequest)
             }
-
-        } /*else {
-            Toast.makeText(
-                requireContext(),
-                "Invalid Ticket",
-                Toast.LENGTH_SHORT
-            ).show()
-        }*/
+        }
     }
+
 
     private fun initiateCodeScanner() {
         codeScanner = CodeScanner(requireContext(), scanner_view)
@@ -161,7 +203,7 @@ class BarcodeFragment : Fragment() {
 
             decodeCallback = DecodeCallback {
                 activity?.runOnUiThread {
-                    textView.text = it.text
+                    doTicketVerification()
                     word = it.text
                 }
             }
@@ -183,34 +225,6 @@ class BarcodeFragment : Fragment() {
     override fun onPause() {
         super.onPause()
         codeScanner.releaseResources()
-    }
-
-    fun getVolleyError(error: VolleyError): String {
-        var errorMsg = ""
-        if (error is NoConnectionError) {
-            "Your device is not connected to internet.please try again with active internet connection"
-        } else if (error is NetworkError || error.cause is ConnectException) {
-            errorMsg =
-                "Your device is not connected to internet.please try again with active internet connection"
-        } else if (error.cause is MalformedURLException) {
-            errorMsg = "That was a bad request please try again…"
-        } else if (error is ParseError || error.cause is IllegalStateException || error.cause is JSONException || error.cause is XmlPullParserException) {
-            errorMsg = "There was an error parsing data…"
-        } else if (error.cause is OutOfMemoryError) {
-            errorMsg = "Device out of memory"
-        } else if (error is AuthFailureError) {
-            errorMsg = "Failed to authenticate user at the server, please contact support"
-        } else if (error is ServerError || error.cause is ServerError) {
-            errorMsg = "Internal server error occurred please try again...."
-        } else if (error is TimeoutError || error.cause is SocketTimeoutException || error.cause is ConnectTimeoutException || error.cause is SocketException || (error.cause!!.message != null && error.cause!!.message!!.contains(
-                "Your connection has timed out, please try again"
-            ))
-        ) {
-            errorMsg = "Your connection has timed out, please try again"
-        } else {
-            errorMsg = "An unknown error occurred during the operation, please try again"
-        }
-        return errorMsg
     }
 
 

@@ -9,7 +9,7 @@
 
     <com.budiyev.android.codescanner.CodeScannerView
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="match_parent"
         android:id="@+id/scanner_view"
         app:autoFocusButtonColor="@android:color/white"
         app:autoFocusButtonVisible="true"
@@ -18,43 +18,16 @@
         app:maskColor="#6C000800"
         />
 
-
-    <TextView
-        android:id="@+id/tv_"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/scanner_view"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:text="@string/focus_camera_on_barcode_to_enable_autoscanning"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/tv_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"
-        android:textColor="@android:color/black"/>
-
-
-    <Button
-        android:id="@+id/verify_btn"
+    <View
+        android:id="@+id/bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_textView"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@android:color/holo_blue_dark"
-        android:text="Verify Ticket"
-        android:textColor="@android:color/white" />
+        android:layout_height="10dp"
+        android:visibility="visible"
+        android:layout_margin="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimary"
+        android:src="@mipmap/ic_launcher"/>
 
 
 

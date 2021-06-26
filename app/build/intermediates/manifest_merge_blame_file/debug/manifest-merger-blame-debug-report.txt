@@ -34,8 +34,8 @@
 19-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:11:9-32
 20
 21    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-21-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:22:5-67
-21-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:22:22-65
+21-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:22:5-67
+21-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:22:22-65
 22    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 22-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:26:5-82
 22-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:26:22-79
@@ -45,7 +45,7 @@
 25        android:allowBackup="true"
 25-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:14:9-35
 26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-26-->[androidx.core:core:1.3.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\39ce4472dd11e6b3f514e4380eb80351\core-1.3.0\AndroidManifest.xml:24:18-86
+26-->[androidx.core:core:1.3.2] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\33fc8f7965987a3957a83110f726f72f\core-1.3.2\AndroidManifest.xml:24:18-86
 27        android:debuggable="true"
 28        android:icon="@mipmap/ic_launcher"
 28-->C:\Users\LENOVO\Desktop\Bleecom Validator\Validator\app\src\main\AndroidManifest.xml:15:9-43
@@ -192,38 +192,38 @@
 102-->[com.google.mlkit:common:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d1ec8c522d7a4a11be661b2372b0dfcb\jetified-common-17.0.0\AndroidManifest.xml:13:13-35
 103
 104        <receiver
-104-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:7-26:18
+104-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:7-26:18
 105            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-105-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:17-89
+105-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:17-89
 106            android:enabled="true"
-106-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:90-112
+106-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:90-112
 107            android:exported="false" >
-107-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:113-137
+107-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:25:113-137
 108        </receiver>
 109        <receiver
-109-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:7-31:18
+109-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:7-31:18
 110            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-110-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:17-104
+110-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:17-104
 111            android:enabled="true"
-111-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:162-184
+111-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:162-184
 112            android:permission="android.permission.INSTALL_PACKAGES" >
-112-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:105-161
+112-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:27:105-161
 113            <intent-filter>
-113-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:28:11-30:27
+113-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:28:11-30:27
 114                <action android:name="com.android.vending.INSTALL_REFERRER" />
-114-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:29:15-76
-114-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:29:23-74
+114-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:29:15-76
+114-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:29:23-74
 115            </intent-filter>
 116        </receiver>
 117
 118        <service
-118-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:7-137
+118-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:7-137
 119            android:name="com.google.android.gms.measurement.AppMeasurementService"
-119-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:16-87
+119-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:16-87
 120            android:enabled="true"
-120-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:88-110
+120-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:88-110
 121            android:exported="false" />
-121-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\d65db36b1101621475e0a906f9c43d9d\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:111-135
+121-->[com.google.firebase:firebase-analytics:9.6.1] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\1ff285294a08139e873dc9525a52c2ef\jetified-firebase-analytics-9.6.1\AndroidManifest.xml:32:111-135
 122
 123        <receiver
 123-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\LENOVO\.gradle\caches\transforms-2\files-2.1\ead0f33f696f6e8cf0aa4afa0b3a6d14\jetified-firebase-iid-20.1.5\AndroidManifest.xml:37:9-44:20

@@ -8,6 +8,7 @@ import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.android.volley.*
 import com.android.volley.toolbox.JsonObjectRequest
+import com.android.volley.toolbox.StringRequest
 import com.google.firebase.FirebaseApp
 import com.google.firebase.ml.vision.FirebaseVision
 import com.google.firebase.ml.vision.common.FirebaseVisionImage
@@ -23,9 +25,12 @@ import com.google.firebase.ml.vision.text.FirebaseVisionText
 import com.google.mlkit.codelab.translate.R
 import com.google.mlkit.codelab.translate.util.DetectConnection
 import com.google.mlkit.codelab.translate.util.Loading
+import com.thecode.aestheticdialogs.*
 import org.apache.http.conn.ConnectTimeoutException
 import org.json.JSONException
+import org.json.JSONObject
 import org.xmlpull.v1.XmlPullParserException
+import java.io.UnsupportedEncodingException
 import java.net.ConnectException
 import java.net.MalformedURLException
 import java.net.SocketException
@@ -98,53 +103,84 @@ class MainFragment : Fragment() {
                 "No word has been detected, Please Ensure to take a clear Image",
                 Toast.LENGTH_SHORT
             ).show()
-        } else if (word.startsWith("#")) {
+        } else {
             progressBar.startLoading(requireContext())
-            // Instantiate the RequestQueue.
-            //var uniqueID = UUID.fromString("313701fc-c222-488d-b9c9-432237413155")
-            val uniqueID = "a37c582b5b6c6b3267049f33cb674015"
-            val bASE_URL = "https://transport.palmkash.com/ticket-boarding"
+            val uniqueID = "1aac75011bf30e06fa9e06c973a28234"
+            val bASE_URL = "https://demo.ticketano.com/ticket-boarding"
             val url = bASE_URL + "?device_id=" + uniqueID + "&ticket_number=" + word
             var prev = "null"
 
             if (prev != word) {
                 // Request a string response from the provided URL.
-                val jsonObjectRequest = JsonObjectRequest(
-                    Request.Method.GET, url, null,
-                    { response ->
-                        // Display the first 500 characters of the response string.
+                val stringRequest = StringRequest(
+                    Request.Method.GET, url, {
                         progressBar.endLoading()
-                        val JSONObj = response.getString("message")
-                        Toast.makeText(
-                            requireContext(),
-                            "Response: %s".format(JSONObj),
-                            Toast.LENGTH_SHORT
-                        ).show()
-                        //  detectTv.text = "Response: %s".format(JSONObj)
-                    },
-                    { error ->
-                        //  result.value = getVolleyError(error)
+                        val responseResult = it.toString()
+                        try {
+                            val responseObject = JSONObject(responseResult)
+                            AestheticDialog.Builder(
+                                requireActivity(),
+                                DialogStyle.FLAT,
+                                DialogType.SUCCESS
+                            ).apply {
+                                setTitle("Success")
+                                setMessage(responseObject.getString("message"))
+                                setCancelable(false)
+                                setDarkMode(true)
+                                setGravity(Gravity.CENTER)
+                                setAnimation(DialogAnimation.SHRINK)
+
+                            }.setOnClickListener(object : OnDialogClickListener {
+                                override fun onClick(dialog: AestheticDialog.Builder) {
+                                    dialog.dismiss()
+                                }
+                            }).show()
+
+                        }catch (e : Exception){
+                            Log.d("ERROR1", e.message.toString())
+                        }
+
+                    }, {
+
                         progressBar.endLoading()
-                        Toast.makeText(
-                            requireContext(),
-                            getVolleyError(error),
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    })
 
-                // Add the request to the RequestQueue.
+                        var body: String?
+                        //get status code here
+                        val statusCode = it.networkResponse.statusCode.toString()
+                        Log.d("ERROR12", statusCode)
+                        if (it.networkResponse.data != null) {
+                            try {
+                                body = String(it.networkResponse.data, charset("UTF-8"))
 
+                                //converting response to json object
+                                val obj = JSONObject(body)
+                                AestheticDialog.Builder(
+                                    requireActivity(),
+                                    DialogStyle.FLAT,
+                                    DialogType.ERROR
+                                ).apply {
+                                    setTitle("Error")
+                                    setMessage(obj.getString("message"))
+                                    setCancelable(false)
+                                    setDarkMode(true)
+                                    setGravity(Gravity.CENTER)
+                                    setAnimation(DialogAnimation.SHRINK)
+
+                                }.setOnClickListener(object : OnDialogClickListener {
+                                    override fun onClick(dialog: AestheticDialog.Builder) {
+                                        dialog.dismiss()
+                                    }
+                                }).show()
+                            } catch (e: UnsupportedEncodingException) {
+                                Log.d("ERROR1", e.message.toString())
+                            }
+                        }
+                    }
+
+                )
                 MySingleton.getInstance(requireContext())
-                    .addToRequestQueue(jsonObjectRequest)
-                //  result.value = word + " id:" + uniqueID
+                    .addToRequestQueue(stringRequest)
             }
-
-        } else {
-            Toast.makeText(
-                requireContext(),
-                "Invalid Ticket",
-                Toast.LENGTH_SHORT
-            ).show()
         }
     }
 
