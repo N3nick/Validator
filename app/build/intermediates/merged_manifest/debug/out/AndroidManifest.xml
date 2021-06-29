@@ -32,6 +32,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
             android:name="com.google.mlkit.codelab.translate.settings.SettingsActivity"
             android:theme="@style/AppTheme1" />
         <activity

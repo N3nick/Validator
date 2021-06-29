@@ -110,6 +110,8 @@ class BarcodeFragment : Fragment() {
             ).show()
         } else {
             progressBar.startLoading(requireContext())
+            codeScanner.releaseResources()
+
            /* val uniqueID = "1aac75011bf30e06fa9e06c973a28234"
             val bASE_URL = "https://demo.ticketano.com/ticket-boarding"*/
             val url = bASE_URL + "?device_id=" + uniqueID + "&ticket_number=" + word
@@ -220,7 +222,7 @@ class BarcodeFragment : Fragment() {
 
             errorCallback = ErrorCallback {
                 activity?.runOnUiThread {
-                    Log.e("Main", "codeScanner: ${it.message}")
+                   Toast.makeText(requireContext(), it.message, Toast.LENGTH_SHORT).show()
                 }
             }
         }

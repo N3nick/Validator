@@ -1,12 +1,11 @@
 package com.google.mlkit.codelab.translate.main
 
 import MySingleton
-import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.graphics.Bitmap
-import android.graphics.drawable.BitmapDrawable
+import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
@@ -15,10 +14,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import androidx.appcompat.app.AppCompatActivity
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContract
 import androidx.fragment.app.Fragment
 import com.android.volley.*
-import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.StringRequest
 import com.google.firebase.FirebaseApp
 import com.google.firebase.ml.vision.FirebaseVision
@@ -27,16 +26,10 @@ import com.google.firebase.ml.vision.text.FirebaseVisionText
 import com.google.mlkit.codelab.translate.R
 import com.google.mlkit.codelab.translate.util.DetectConnection
 import com.google.mlkit.codelab.translate.util.Loading
+import com.theartofdev.edmodo.cropper.CropImage
 import com.thecode.aestheticdialogs.*
-import org.apache.http.conn.ConnectTimeoutException
-import org.json.JSONException
 import org.json.JSONObject
-import org.xmlpull.v1.XmlPullParserException
 import java.io.UnsupportedEncodingException
-import java.net.ConnectException
-import java.net.MalformedURLException
-import java.net.SocketException
-import java.net.SocketTimeoutException
 
 
 class MainFragment : Fragment() {
@@ -58,6 +51,19 @@ class MainFragment : Fragment() {
     var uniqueID : String? = ""
     var bASE_URL : String? = ""
 
+    private val cropActivityResultContract = object : ActivityResultContract<Any?, Uri?>(){
+        override fun createIntent(context: Context, input: Any?): Intent {
+            return CropImage.activity().getIntent(requireContext())
+        }
+
+        override fun parseResult(resultCode: Int, intent: Intent?): Uri? {
+            return CropImage.getActivityResult(intent)?.uri
+        }
+
+    }
+
+    private lateinit var cropActivityResultLauncher: ActivityResultLauncher<Any?>
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -76,14 +82,21 @@ class MainFragment : Fragment() {
         detectTv = container.findViewById(R.id.text_display)
         captureImageView = container.findViewById(R.id.image_view)
 
-        captureImageButton.setOnClickListener {
-            //for capturing the image
-            val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-            try {
-                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
-            } catch (e: ActivityNotFoundException) {
-                Log.d(TAG, "Error: " + e.localizedMessage)
+        loadSharedPreferences()
+
+        cropActivityResultLauncher = registerForActivityResult(cropActivityResultContract){
+            it?.let {
+                imageBitmap = MediaStore.Images.Media.getBitmap(requireContext().getContentResolver(), it)
+                captureImageView.setImageURI(it)
+                detectTextFromImage()
             }
+        }
+
+        captureImageButton.setOnClickListener {
+
+            cropActivityResultLauncher.launch(null)
+
+
         }
 
         detectTextButton.setOnClickListener {
@@ -93,8 +106,14 @@ class MainFragment : Fragment() {
     }
 
     private fun loadSharedPreferences() {
-        val sharedPreferences : SharedPreferences = requireActivity().getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
-        bASE_URL = sharedPreferences.getString("URL_KEY", "https://demo.ticketano.com/ticket-boarding")
+        val sharedPreferences : SharedPreferences = requireActivity().getSharedPreferences(
+            "sharedPrefs",
+            Context.MODE_PRIVATE
+        )
+        bASE_URL = sharedPreferences.getString(
+            "URL_KEY",
+            "https://demo.ticketano.com/ticket-boarding"
+        )
         uniqueID = sharedPreferences.getString("DEVICE_KEY", "1aac75011bf30e06fa9e06c973a28234")
     }
 
@@ -146,7 +165,7 @@ class MainFragment : Fragment() {
                                 }
                             }).show()
 
-                        }catch (e : Exception){
+                        } catch (e: Exception) {
                             Log.d("ERROR1", e.message.toString())
                         }
 
@@ -250,42 +269,8 @@ class MainFragment : Fragment() {
         }
     }
 
-    fun getVolleyError(error: VolleyError): String {
-        var errorMsg = ""
-        if (error is NoConnectionError) {
-            "Your device is not connected to internet.please try again with active internet connection"
-        } else if (error is NetworkError || error.cause is ConnectException) {
-            errorMsg =
-                "Your device is not connected to internet.please try again with active internet connection"
-        } else if (error.cause is MalformedURLException) {
-            errorMsg = "That was a bad request please try again…"
-        } else if (error is ParseError || error.cause is IllegalStateException || error.cause is JSONException || error.cause is XmlPullParserException) {
-            errorMsg = "There was an error parsing data…"
-        } else if (error.cause is OutOfMemoryError) {
-            errorMsg = "Device out of memory"
-        } else if (error is AuthFailureError) {
-            errorMsg = "Failed to authenticate user at the server, please contact support"
-        } else if (error is ServerError || error.cause is ServerError) {
-            errorMsg = "Internal server error occurred please try again...."
-        } else if (error is TimeoutError || error.cause is SocketTimeoutException || error.cause is ConnectTimeoutException || error.cause is SocketException || (error.cause!!.message != null && error.cause!!.message!!.contains(
-                "Your connection has timed out, please try again"
-            ))
-        ) {
-            errorMsg = "Your connection has timed out, please try again"
-        } else {
-            errorMsg = "An unknown error occurred during the operation, please try again"
-        }
-        return errorMsg
-    }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == AppCompatActivity.RESULT_OK) {
-            imageBitmap = data?.extras?.get("data") as Bitmap
-            captureImageView.setImageBitmap(imageBitmap)
-            detectTextFromImage()
-        }
-    }
+
 
 
 }
