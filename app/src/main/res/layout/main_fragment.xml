@@ -27,6 +27,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:text="Detected text :"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="18sp" />
 
     <TextView
@@ -39,7 +40,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:maxLines="5"
-        android:scrollbars = "vertical"
+        android:scrollbars="vertical"
         android:text="..."
         android:textColor="@android:color/black"
         android:textSize="18sp" />
@@ -55,7 +56,7 @@
         android:background="@drawable/btn_green_pressed"
         android:backgroundTint="@color/colorPrimary"
         android:text="Capture Ticket Image"
-        android:textColor="@android:color/white" />
+        android:textColor="@color/cardview_light_background" />
 
     <Button
         android:id="@+id/display_text_button"
@@ -67,8 +68,9 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/btn_blue_selector"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:text="Verify Ticket"
-        android:textColor="@android:color/white" />
+        android:textColor="@color/cardview_light_background" />
 </RelativeLayout>
 
 

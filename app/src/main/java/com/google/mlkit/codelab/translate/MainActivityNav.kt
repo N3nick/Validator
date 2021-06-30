@@ -26,7 +26,7 @@ class MainActivityNav : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_nav)
 
-        supportActionBar?.title = Html.fromHtml("<font color='#ffffff'>Bus Ticket Scanner</font>")
+        supportActionBar?.title = Html.fromHtml("<font color='#ffffff'>PalmKash</font>")
 
 
         val navView: BottomNavigationView = findViewById(R.id.nav_view)

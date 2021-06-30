@@ -601,6 +601,23 @@ attr listPreferredItemPaddingRight
 attr listPreferredItemPaddingStart
 attr logo
 attr logoDescription
+attr lottieAnimationViewStyle
+attr lottie_autoPlay
+attr lottie_cacheComposition
+attr lottie_colorFilter
+attr lottie_enableMergePathsForKitKatAndAbove
+attr lottie_fallbackRes
+attr lottie_fileName
+attr lottie_imageAssetsFolder
+attr lottie_loop
+attr lottie_progress
+attr lottie_rawRes
+attr lottie_renderMode
+attr lottie_repeatCount
+attr lottie_repeatMode
+attr lottie_scale
+attr lottie_speed
+attr lottie_url
 attr maskColor
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogTheme
@@ -996,6 +1013,7 @@ color foreground_material_light
 color green_connectify
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1106,6 +1124,7 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1767,6 +1786,7 @@ id all
 id always
 id async
 id auto
+id automatic
 id back
 id bar
 id bar1
@@ -1884,6 +1904,7 @@ id gone
 id group_divider
 id groups
 id guideline
+id hardware
 id hideable
 id home
 id homeAsUp
@@ -1920,6 +1941,8 @@ id line1
 id line3
 id listMode
 id list_item
+id lottie_animation
+id lottie_layer_name
 id masked
 id media_actions
 id menu_settings
@@ -1988,6 +2011,8 @@ id progress_circular
 id progress_horizontal
 id radio
 id rectangle
+id restart
+id reverse
 id right
 id right_icon
 id right_side
@@ -2027,8 +2052,10 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id software
 id spacer
 id special_effects_controller_view_tag
+id splash_text
 id split_action_bar
 id spread
 id spread_inside
@@ -2181,6 +2208,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main_nav
 layout activity_settings
+layout activity_splash
 layout crop_image_activity
 layout crop_image_view
 layout custom_dialog
@@ -2281,6 +2309,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation mobile_navigation
 plurals mtrl_badge_content_description
+raw tickets
 raw translate_models_metadata
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -3202,6 +3231,7 @@ styleable LinearLayoutCompat android_gravity android_orientation android_baselin
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
+styleable LottieAnimationView lottie_autoPlay lottie_cacheComposition lottie_colorFilter lottie_enableMergePathsForKitKatAndAbove lottie_fallbackRes lottie_fileName lottie_imageAssetsFolder lottie_loop lottie_progress lottie_rawRes lottie_renderMode lottie_repeatCount lottie_repeatMode lottie_scale lottie_speed lottie_url
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType

@@ -31,6 +31,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.google.mlkit.codelab.translate.main.splash.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/AppTheme1" />
@@ -41,16 +48,10 @@
             android:name="com.google.mlkit.codelab.translate.MainActivityNav"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.google.mlkit.codelab.translate.MainActivity"
-            android:screenOrientation="portrait" >
-        </activity> <!-- Automatically download the text recognition model after app install -->
+            android:screenOrientation="portrait" /> <!-- Automatically download the text recognition model after app install -->
         <meta-data
             android:name="com.google.ml.vision.DEPENDENCIES"
             android:value="ocr" />
