@@ -44,6 +44,10 @@
         "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_blue_selector.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\btn_blue_selector.xml"
+    },
+    {
         "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_greyscale_regular_3x.png.flat",
         "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\greyscale_regular_3x.png"
     },
@@ -56,8 +60,24 @@
         "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\layout\\fragment_barcode.xml"
     },
     {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_check_circle.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\ic_baseline_check_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_success_button_bg.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\success_button_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\layout_success_dialog.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\layout\\success_dialog.xml"
+    },
+    {
         "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_translate_24px.xml.flat",
         "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\ic_translate_24px.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_green_pressed.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\btn_green_pressed.xml"
     },
     {
         "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\raw_tickets.json.flat",
@@ -82,6 +102,14 @@
     {
         "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\layout_error_dialog.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\layout\\error_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_error.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\ic_baseline_error.xml"
     },
     {
         "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",

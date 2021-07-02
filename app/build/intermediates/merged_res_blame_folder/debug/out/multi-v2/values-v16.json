@@ -4,17 +4,7 @@
             "outputFile": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\33fc8f7965987a3957a83110f726f72f\\core-1.3.2\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\532b1d1361adfbb51c08b5473f6c9942\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\e57b52dc33ce37636b5a5e42ad63689a\\appcompat-1.1.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\39ce4472dd11e6b3f514e4380eb80351\\core-1.3.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

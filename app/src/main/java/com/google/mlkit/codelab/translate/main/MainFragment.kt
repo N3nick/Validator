@@ -1,6 +1,7 @@
 package com.google.mlkit.codelab.translate.main
 
 import MySingleton
+import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
@@ -16,6 +17,7 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContract
+import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
 import com.android.volley.*
 import com.android.volley.toolbox.StringRequest
@@ -27,7 +29,6 @@ import com.google.mlkit.codelab.translate.R
 import com.google.mlkit.codelab.translate.util.DetectConnection
 import com.google.mlkit.codelab.translate.util.Loading
 import com.theartofdev.edmodo.cropper.CropImage
-import com.thecode.aestheticdialogs.*
 import org.json.JSONObject
 import java.io.UnsupportedEncodingException
 
@@ -147,23 +148,7 @@ class MainFragment : Fragment() {
                         val responseResult = it.toString()
                         try {
                             val responseObject = JSONObject(responseResult)
-                            AestheticDialog.Builder(
-                                requireActivity(),
-                                DialogStyle.FLAT,
-                                DialogType.SUCCESS
-                            ).apply {
-                                setTitle("Success")
-                                setMessage(responseObject.getString("message"))
-                                setCancelable(false)
-                                setDarkMode(true)
-                                setGravity(Gravity.CENTER)
-                                setAnimation(DialogAnimation.SHRINK)
-
-                            }.setOnClickListener(object : OnDialogClickListener {
-                                override fun onClick(dialog: AestheticDialog.Builder) {
-                                    dialog.dismiss()
-                                }
-                            }).show()
+                            openSuccessDialog(responseObject)
 
                         } catch (e: Exception) {
                             Log.d("ERROR1", e.message.toString())
@@ -183,23 +168,7 @@ class MainFragment : Fragment() {
 
                                 //converting response to json object
                                 val obj = JSONObject(body)
-                                AestheticDialog.Builder(
-                                    requireActivity(),
-                                    DialogStyle.FLAT,
-                                    DialogType.ERROR
-                                ).apply {
-                                    setTitle("Error")
-                                    setMessage(obj.getString("message"))
-                                    setCancelable(false)
-                                    setDarkMode(true)
-                                    setGravity(Gravity.CENTER)
-                                    setAnimation(DialogAnimation.SHRINK)
-
-                                }.setOnClickListener(object : OnDialogClickListener {
-                                    override fun onClick(dialog: AestheticDialog.Builder) {
-                                        dialog.dismiss()
-                                    }
-                                }).show()
+                                openErrorDialog(obj)
                             } catch (e: UnsupportedEncodingException) {
                                 Log.d("ERROR1", e.message.toString())
                             }
@@ -210,6 +179,36 @@ class MainFragment : Fragment() {
                 MySingleton.getInstance(requireContext())
                     .addToRequestQueue(stringRequest)
             }
+        }
+    }
+
+    private fun openSuccessDialog(responseObject: JSONObject) {
+        val  builder = AlertDialog.Builder(requireContext())
+        val layoutView = layoutInflater.inflate(R.layout.success_dialog, null)
+        val dialogButton = layoutView.findViewById<AppCompatButton>(R.id.button_ok)
+        val messageView = layoutView.findViewById<TextView>(R.id.dialog_success_text)
+        messageView.text = responseObject.getString("message")
+        builder.setView(layoutView)
+        val alertDialog = builder.create()
+        alertDialog.show()
+
+        dialogButton.setOnClickListener {
+            alertDialog.dismiss()
+        }
+    }
+
+    private fun openErrorDialog(responseObject: JSONObject) {
+        val  builder = AlertDialog.Builder(requireContext())
+        val layoutView = layoutInflater.inflate(R.layout.error_dialog, null)
+        val dialogButton = layoutView.findViewById<AppCompatButton>(R.id.errorButton)
+        val messageView = layoutView.findViewById<TextView>(R.id.dialog_error_text)
+        messageView.text = responseObject.getString("message")
+        builder.setView(layoutView)
+        val alertDialog = builder.create()
+        alertDialog.show()
+
+        dialogButton.setOnClickListener {
+            alertDialog.dismiss()
         }
     }
 

@@ -1,6 +1,7 @@
 package com.google.mlkit.codelab.translate.main.barcode
 
 import MySingleton
+import android.app.AlertDialog
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -15,6 +16,7 @@ import android.widget.Button
 import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
 import com.android.volley.*
 import com.android.volley.toolbox.StringRequest
@@ -22,17 +24,9 @@ import com.budiyev.android.codescanner.*
 import com.google.mlkit.codelab.translate.R
 import com.google.mlkit.codelab.translate.util.DetectConnection
 import com.google.mlkit.codelab.translate.util.Loading
-import com.thecode.aestheticdialogs.*
 import kotlinx.android.synthetic.main.fragment_barcode.*
-import org.apache.http.conn.ConnectTimeoutException
-import org.json.JSONException
 import org.json.JSONObject
-import org.xmlpull.v1.XmlPullParserException
 import java.io.UnsupportedEncodingException
-import java.net.ConnectException
-import java.net.MalformedURLException
-import java.net.SocketException
-import java.net.SocketTimeoutException
 
 
 class BarcodeFragment : Fragment() {
@@ -125,27 +119,7 @@ class BarcodeFragment : Fragment() {
                         val responseResult = it.toString()
                         try {
                             val responseObject = JSONObject(responseResult)
-                            AestheticDialog.Builder(
-                                requireActivity(),
-                                DialogStyle.FLAT,
-                                DialogType.SUCCESS
-                            ).apply {
-                                setTitle("Success")
-                                setMessage(responseObject.getString("message"))
-                                setCancelable(false)
-                                setDarkMode(true)
-                                setGravity(Gravity.CENTER)
-                                setAnimation(DialogAnimation.SHRINK)
-
-                            }.setOnClickListener(object : OnDialogClickListener {
-                                override fun onClick(dialog: AestheticDialog.Builder) {
-                                    dialog.dismiss()
-                                    //stop the codeScanner
-                                    codeScanner.startPreview()
-                                    //remove the scanning animation
-                                    bar.visibility = View.VISIBLE
-                                }
-                            }).show()
+                            openSuccessDialog(responseObject)
 
                         }catch (e : Exception){
                             Log.d("ERROR1", e.message.toString())
@@ -165,27 +139,7 @@ class BarcodeFragment : Fragment() {
 
                                 //converting response to json object
                                 val obj = JSONObject(body)
-                                AestheticDialog.Builder(
-                                    requireActivity(),
-                                    DialogStyle.FLAT,
-                                    DialogType.ERROR
-                                ).apply {
-                                    setTitle("Error")
-                                    setMessage(obj.getString("message"))
-                                    setCancelable(false)
-                                    setDarkMode(true)
-                                    setGravity(Gravity.CENTER)
-                                    setAnimation(DialogAnimation.SHRINK)
-
-                                }.setOnClickListener(object : OnDialogClickListener {
-                                    override fun onClick(dialog: AestheticDialog.Builder) {
-                                        dialog.dismiss()
-                                        //stop the codeScanner
-                                        codeScanner.startPreview()
-                                        //remove the scanning animation
-                                        bar.visibility = View.VISIBLE
-                                    }
-                                }).show()
+                                openErrorDialog(obj)
                             } catch (e: UnsupportedEncodingException) {
                                 Log.d("ERROR1", e.message.toString())
                             }
@@ -198,6 +152,46 @@ class BarcodeFragment : Fragment() {
             }
         }
     }
+
+    private fun openSuccessDialog(responseObject: JSONObject) {
+        val  builder = AlertDialog.Builder(requireContext())
+        val layoutView = layoutInflater.inflate(R.layout.success_dialog, null)
+        val dialogButton = layoutView.findViewById<AppCompatButton>(R.id.button_ok)
+        val messageView = layoutView.findViewById<TextView>(R.id.dialog_success_text)
+        messageView.text = responseObject.getString("message")
+        builder.setView(layoutView)
+        val alertDialog = builder.create()
+        alertDialog.show()
+
+        dialogButton.setOnClickListener {
+            alertDialog.dismiss()
+            //stop the codeScanner
+            codeScanner.startPreview()
+            //remove the scanning animation
+            bar.visibility = View.VISIBLE
+        }
+    }
+
+    private fun openErrorDialog(responseObject: JSONObject) {
+        val  builder = AlertDialog.Builder(requireContext())
+        val layoutView = layoutInflater.inflate(R.layout.error_dialog, null)
+        val dialogButton = layoutView.findViewById<AppCompatButton>(R.id.errorButton)
+        val messageView = layoutView.findViewById<TextView>(R.id.dialog_error_text)
+        messageView.text = responseObject.getString("message")
+        builder.setView(layoutView)
+        val alertDialog = builder.create()
+        alertDialog.show()
+
+        dialogButton.setOnClickListener {
+            alertDialog.dismiss()
+            //stop the codeScanner
+            codeScanner.startPreview()
+            //remove the scanning animation
+            bar.visibility = View.VISIBLE
+        }
+    }
+
+
 
 
     private fun initiateCodeScanner() {

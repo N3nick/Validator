@@ -1,4 +1,4 @@
-#Wed Jun 30 18:42:49 EAT 2021
+#Fri Jul 02 19:36:14 EAT 2021
 base.2=C\:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.2=classes2.dex
 base.1=C\:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
