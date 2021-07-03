@@ -28,6 +28,7 @@ import com.google.firebase.ml.vision.text.FirebaseVisionText
 import com.google.mlkit.codelab.translate.R
 import com.google.mlkit.codelab.translate.util.DetectConnection
 import com.google.mlkit.codelab.translate.util.Loading
+import com.google.mlkit.codelab.translate.util.PrefManager
 import com.theartofdev.edmodo.cropper.CropImage
 import org.json.JSONObject
 import java.io.UnsupportedEncodingException
@@ -42,7 +43,7 @@ class MainFragment : Fragment() {
 
     private lateinit var captureImageButton: Button
     private lateinit var detectTextButton: Button
-    private lateinit var detectTv: TextView
+    private lateinit var detectTv: EditText
     private lateinit var captureImageView: ImageView
     val REQUEST_IMAGE_CAPTURE = 1
     private lateinit var imageBitmap: Bitmap
@@ -107,20 +108,13 @@ class MainFragment : Fragment() {
     }
 
     private fun loadSharedPreferences() {
-        val sharedPreferences : SharedPreferences = requireActivity().getSharedPreferences(
-            "sharedPrefs",
-            Context.MODE_PRIVATE
-        )
-        bASE_URL = sharedPreferences.getString(
-            "URL_KEY",
-            "https://demo.ticketano.com/ticket-boarding"
-        )
-        uniqueID = sharedPreferences.getString("DEVICE_KEY", "1aac75011bf30e06fa9e06c973a28234")
+        bASE_URL = PrefManager.getInstance(requireContext()).urlKey
+        uniqueID = PrefManager.getInstance(requireContext()).deviceId
     }
 
     private fun verifyText() {
         //check if any word has been detected
-        if (!DetectConnection().isInternetAvailable(requireContext())) {
+        if (!(DetectConnection().isNetworkAvailable(requireContext()) || DetectConnection().isInternetAvailable())) {
             //check for internet connection
             Toast.makeText(
                 requireContext(),
@@ -213,7 +207,7 @@ class MainFragment : Fragment() {
     }
 
     private fun detectTextFromImage() {
-        if (!DetectConnection().isInternetAvailable(requireContext())) {
+        if (!(DetectConnection().isNetworkAvailable(requireContext()) || DetectConnection().isInternetAvailable())) {
             //check for internet connection
             Toast.makeText(
                 requireContext(),
@@ -244,7 +238,7 @@ class MainFragment : Fragment() {
         } else {
             for (block in result.textBlocks) {
                 progressBar.endLoading()
-                detectTv.text = block.text
+                detectTv.setText(block.text)
                 /* val blockText = block.text
                val blockConfidence = block.confidence
                 val blockLanguages = block.recognizedLanguages

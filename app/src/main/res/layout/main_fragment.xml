@@ -30,7 +30,7 @@
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="18sp" />
 
-    <TextView
+    <EditText
         android:id="@+id/text_display"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,7 +41,6 @@
         android:layout_marginBottom="10dp"
         android:maxLines="5"
         android:scrollbars="vertical"
-        android:text="..."
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 

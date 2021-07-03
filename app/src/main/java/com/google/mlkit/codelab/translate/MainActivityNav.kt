@@ -1,10 +1,9 @@
 package com.google.mlkit.codelab.translate
 
-import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.os.StrictMode
 import android.text.Html
 import android.view.Menu
 import android.view.MenuInflater
@@ -35,17 +34,12 @@ class MainActivityNav : AppCompatActivity() {
         navView.setupWithNavController(navController)
         setUpPermissions()
 
-        saveSharedPrefs()
+        val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
+
+        StrictMode.setThreadPolicy(policy)
     }
 
-    private fun saveSharedPrefs() {
-        val sharedPreferences : SharedPreferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
-        val editor = sharedPreferences.edit()
-        editor.apply{
-            putString("URL_KEY", "https://demo.ticketano.com/ticket-boarding")
-            putString("DEVICE_KEY", "1aac75011bf30e06fa9e06c973a28234")
-        }.apply()
-    }
+
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater : MenuInflater = menuInflater

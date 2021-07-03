@@ -2,3 +2,5 @@ com/google/mlkit/codelab/translate/analyzer/ApiUtil.java
  com.google.mlkit.codelab.translate.analyzer.ApiUtil
 com/google/mlkit/codelab/translate/BuildConfig.java
  com.google.mlkit.codelab.translate.BuildConfig
+com/google/mlkit/codelab/translate/util/PrefManager.java
+ com.google.mlkit.codelab.translate.util.PrefManager

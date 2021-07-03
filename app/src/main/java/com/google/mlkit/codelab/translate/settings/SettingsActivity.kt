@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.google.mlkit.codelab.translate.R
+import com.google.mlkit.codelab.translate.util.PrefManager
 import kotlinx.android.synthetic.main.activity_settings.*
 
 class SettingsActivity : AppCompatActivity() {
@@ -43,22 +44,18 @@ class SettingsActivity : AppCompatActivity() {
     }
 
     private fun loadData() {
-        val sharedPreferences : SharedPreferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
-        val urlString = sharedPreferences.getString("URL_KEY", "https://demo.ticketano.com/ticket-boarding")
-        val deviceId = sharedPreferences.getString("DEVICE_KEY", "1aac75011bf30e06fa9e06c973a28234")
-        urlEditText.setText(urlString)
-        deviceEditText.setText(deviceId)
+        urlEditText.setText(PrefManager.getInstance(applicationContext).urlKey)
+        deviceEditText.setText(PrefManager.getInstance(applicationContext).deviceId)
 
     }
 
     private fun saveData() {
         if (urlEditText.text.toString().trim().length > 0 && deviceEditText.text.toString().trim().length > 0){
-            val sharedPreferences : SharedPreferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
-            val editor = sharedPreferences.edit()
-            editor.apply{
-                putString("URL_KEY", urlEditText.text?.toString())
-                putString("DEVICE_KEY", deviceEditText.text?.toString() )
-            }.apply()
+            PrefManager.getInstance(applicationContext).urlKey = urlEditText.text?.toString()
+            PrefManager.getInstance(applicationContext).deviceId = deviceEditText.text?.toString()
+
+            Toast.makeText(this, "Changes have been successfully saved", Toast.LENGTH_SHORT).show()
+
         }else {
             Toast.makeText(this, "Ensure to fill in all necessary views", Toast.LENGTH_SHORT).show()
         }

@@ -14,7 +14,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@android:color/holo_red_dark">
+        android:background="@color/colorAccent">
 
         <ImageView
             android:layout_width="50dp"
@@ -57,9 +57,9 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:text="Ok"
-            android:textColor="@android:color/holo_red_dark"
+            android:textColor="@color/colorAccent"
             android:background="@drawable/success_button_bg"
-            android:backgroundTint="@android:color/holo_red_dark"/>
+            android:backgroundTint="@color/colorAccent"/>
 
 
 

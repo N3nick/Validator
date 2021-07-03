@@ -24,6 +24,7 @@ import com.budiyev.android.codescanner.*
 import com.google.mlkit.codelab.translate.R
 import com.google.mlkit.codelab.translate.util.DetectConnection
 import com.google.mlkit.codelab.translate.util.Loading
+import com.google.mlkit.codelab.translate.util.PrefManager
 import kotlinx.android.synthetic.main.fragment_barcode.*
 import org.json.JSONObject
 import java.io.UnsupportedEncodingException
@@ -52,18 +53,14 @@ class BarcodeFragment : Fragment() {
 
         container = view as RelativeLayout
         bar = container.findViewById(R.id.bar)
+        loadSharedPreferences()
         startAnimation()
         initiateCodeScanner()
-
-        loadSharedPreferences()
-
-
     }
 
     private fun loadSharedPreferences() {
-        val sharedPreferences : SharedPreferences = requireActivity().getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
-        bASE_URL = sharedPreferences.getString("URL_KEY", "https://demo.ticketano.com/ticket-boarding")
-        uniqueID = sharedPreferences.getString("DEVICE_KEY", "1aac75011bf30e06fa9e06c973a28234")
+        bASE_URL = PrefManager.getInstance(requireContext()).urlKey
+        uniqueID = PrefManager.getInstance(requireContext()).deviceId
     }
 
     private fun startAnimation() {
@@ -89,7 +86,7 @@ class BarcodeFragment : Fragment() {
         codeScanner.releaseResources()
         //remove the scanning animation
         bar.visibility = View.GONE
-        if (!DetectConnection().isInternetAvailable(requireContext())) {
+        if (!(DetectConnection().isNetworkAvailable(requireContext()) || DetectConnection().isInternetAvailable()) ){
             //check for internet connection
             Toast.makeText(
                 requireContext(),
@@ -195,32 +192,38 @@ class BarcodeFragment : Fragment() {
 
 
     private fun initiateCodeScanner() {
-        codeScanner = CodeScanner(requireContext(), scanner_view)
-        codeScanner.apply {
-            //set to use back camera
-            camera = CodeScanner.CAMERA_BACK
-            //set to scan all barcode formats
-            formats = CodeScanner.ALL_FORMATS
+        try {
 
-            autoFocusMode = AutoFocusMode.SAFE
-            scanMode = ScanMode.CONTINUOUS
-            isAutoFocusEnabled = true
-            isFlashEnabled = false
 
-            decodeCallback = DecodeCallback {
-                activity?.runOnUiThread {
-                    word = it.text
-                    doTicketVerification()
+            codeScanner = CodeScanner(requireContext(), scanner_view)
+            codeScanner.apply {
+                //set to use back camera
+                camera = CodeScanner.CAMERA_BACK
+                //set to scan all barcode formats
+                formats = CodeScanner.ALL_FORMATS
+
+                autoFocusMode = AutoFocusMode.SAFE
+                scanMode = ScanMode.CONTINUOUS
+                isAutoFocusEnabled = true
+                isFlashEnabled = false
+
+                decodeCallback = DecodeCallback {
+                    activity?.runOnUiThread {
+                        word = it.text
+                        doTicketVerification()
+                    }
+                }
+
+                errorCallback = ErrorCallback {
+                    activity?.runOnUiThread {
+                        Toast.makeText(requireContext(), it.message, Toast.LENGTH_SHORT).show()
+                    }
                 }
             }
-
-            errorCallback = ErrorCallback {
-                activity?.runOnUiThread {
-                   Toast.makeText(requireContext(), it.message, Toast.LENGTH_SHORT).show()
-                }
-            }
+            codeScanner.startPreview()
+        }catch (e : Exception){
+            Toast.makeText(requireContext(), e.message, Toast.LENGTH_SHORT).show()
         }
-        codeScanner.startPreview()
     }
 
     override fun onResume() {
