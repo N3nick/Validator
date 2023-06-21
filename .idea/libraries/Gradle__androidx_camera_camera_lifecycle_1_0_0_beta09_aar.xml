@@ -5,10 +5,16 @@
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/3975b7ad6721416af5da0116dbc82351/jetified-camera-lifecycle-1.0.0-beta09/res" />
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/3975b7ad6721416af5da0116dbc82351/jetified-camera-lifecycle-1.0.0-beta09/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/3975b7ad6721416af5da0116dbc82351/jetified-camera-lifecycle-1.0.0-beta09/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3975b7ad6721416af5da0116dbc82351/jetified-camera-lifecycle-1.0.0-beta09/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/97002c78008a7729a1861bb3a7535a15/jetified-camera-lifecycle-1.0.0-beta09/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bf1e1bb949607e230a5b72888e70e6f2/jetified-camera-lifecycle-1.0.0-beta09/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bf1e1bb949607e230a5b72888e70e6f2/jetified-camera-lifecycle-1.0.0-beta09/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bf1e1bb949607e230a5b72888e70e6f2/jetified-camera-lifecycle-1.0.0-beta09/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/modules-2/files-2.1/androidx.camera/camera-lifecycle/1.0.0-beta09/8a85c61d860720fc0351a450d2973090ad76994e/camera-lifecycle-1.0.0-beta09-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.camera/camera-lifecycle/1.0.0-beta09/8a85c61d860720fc0351a450d2973090ad76994e/camera-lifecycle-1.0.0-beta09-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

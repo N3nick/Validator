@@ -16,7 +16,7 @@
   -->
 
 <resources>
-    <string name="app_name">Urid Tech AI</string>
+    <string name="app_name">Palmkash Scanner</string>
     <string name="unknown_error">Unknown error occurred.</string>
     <string name="content_description_google_translate_attribution">Google Translate attribution</string>
     <string name="overlay_help">Center text in box</string>
@@ -27,4 +27,7 @@
     <string name="title_barcode">Barcode</string>
     <string name="title_face">Face</string>
     <string name="title_translate">Scan Text</string>
+    <string name="check_connection">Please check your Network Connection!</string>
+    <string name="focus_camera_on_barcode_to_enable_autoscanning">Focus Camera on Barcode To enable autoscanning</string>
+    <string name="settings">Settings</string>
 </resources>

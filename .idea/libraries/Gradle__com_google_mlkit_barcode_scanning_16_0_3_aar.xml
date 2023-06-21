@@ -5,9 +5,15 @@
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/e7c500665e0c34b62d40b65d3ce8ac47/jetified-barcode-scanning-16.0.3/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/e7c500665e0c34b62d40b65d3ce8ac47/jetified-barcode-scanning-16.0.3/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/e7c500665e0c34b62d40b65d3ce8ac47/jetified-barcode-scanning-16.0.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e7c500665e0c34b62d40b65d3ce8ac47/jetified-barcode-scanning-16.0.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b1a08b8835a6d7e8123da4eb84fbece4/jetified-barcode-scanning-16.0.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/841115b70d44e5fd7fb9fea7c5b02e6f/jetified-barcode-scanning-16.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/841115b70d44e5fd7fb9fea7c5b02e6f/jetified-barcode-scanning-16.0.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/841115b70d44e5fd7fb9fea7c5b02e6f/jetified-barcode-scanning-16.0.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/modules-2/files-2.1/com.google.mlkit/barcode-scanning/16.0.3/c9cfe329caed53df2d630f13f112ba6c9c8e3a81/barcode-scanning-16.0.3-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.mlkit/barcode-scanning/16.0.3/c9cfe329caed53df2d630f13f112ba6c9c8e3a81/barcode-scanning-16.0.3-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

@@ -5,10 +5,16 @@
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/e9cdc897f1c0ce68be49701affb8c059/legacy-support-core-utils-1.0.0/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/e9cdc897f1c0ce68be49701affb8c059/legacy-support-core-utils-1.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/e9cdc897f1c0ce68be49701affb8c059/legacy-support-core-utils-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e9cdc897f1c0ce68be49701affb8c059/legacy-support-core-utils-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/58641ae6b9ba958b9fb9195bcaed0ce2/legacy-support-core-utils-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/392dda89a47c12ba370d0c3434a5af69/legacy-support-core-utils-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/392dda89a47c12ba370d0c3434a5af69/legacy-support-core-utils-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/392dda89a47c12ba370d0c3434a5af69/legacy-support-core-utils-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/modules-2/files-2.1/androidx.legacy/legacy-support-core-utils/1.0.0/46c37f178088153618cfb0afef08ec96c48f93cb/legacy-support-core-utils-1.0.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.legacy/legacy-support-core-utils/1.0.0/46c37f178088153618cfb0afef08ec96c48f93cb/legacy-support-core-utils-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

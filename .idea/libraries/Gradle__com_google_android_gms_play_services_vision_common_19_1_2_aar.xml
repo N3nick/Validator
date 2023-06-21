@@ -5,9 +5,15 @@
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/c396b9d6d37703509abb0b77b015d3e9/jetified-play-services-vision-common-19.1.2/res" />
       <root url="file://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/c396b9d6d37703509abb0b77b015d3e9/jetified-play-services-vision-common-19.1.2/AndroidManifest.xml" />
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/transforms-2/files-2.1/c396b9d6d37703509abb0b77b015d3e9/jetified-play-services-vision-common-19.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c396b9d6d37703509abb0b77b015d3e9/jetified-play-services-vision-common-19.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5db33dec9c75b6d01c7acca21b2cfa3f/jetified-play-services-vision-common-19.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/552b43b53e53f5df6c1f679c1efc6ea7/jetified-play-services-vision-common-19.1.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/552b43b53e53f5df6c1f679c1efc6ea7/jetified-play-services-vision-common-19.1.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/552b43b53e53f5df6c1f679c1efc6ea7/jetified-play-services-vision-common-19.1.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../MacGyver-master/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-vision-common/19.1.2/c78078339d649dcd66d2d5948b64201f8b42d83e/play-services-vision-common-19.1.2-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-vision-common/19.1.2/c78078339d649dcd66d2d5948b64201f8b42d83e/play-services-vision-common-19.1.2-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

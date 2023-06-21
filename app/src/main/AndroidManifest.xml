@@ -7,6 +7,11 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -15,20 +20,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivityNav"
-            android:screenOrientation="portrait">
+        <activity android:name=".main.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".MainActivityNav"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
 
         </activity>
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait">
-        </activity> <!-- Automatically download the text recognition model after app install -->
+            android:screenOrientation="portrait" /> <!-- Automatically download the text recognition model after app install -->
         <meta-data
             android:name="com.google.ml.vision.DEPENDENCIES"
             android:value="ocr" />

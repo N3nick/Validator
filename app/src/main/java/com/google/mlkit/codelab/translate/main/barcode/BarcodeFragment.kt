@@ -1,50 +1,44 @@
 package com.google.mlkit.codelab.translate.main.barcode
 
+import MySingleton
+import android.app.AlertDialog
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.DisplayMetrics
 import android.util.Log
-import androidx.fragment.app.Fragment
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.camera.core.*
-import androidx.camera.lifecycle.ProcessCameraProvider
-import androidx.camera.view.PreviewView
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContextCompat
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import android.widget.Button
+import android.widget.RelativeLayout
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.widget.AppCompatButton
+import androidx.fragment.app.Fragment
+import com.android.volley.*
+import com.android.volley.toolbox.StringRequest
+import com.budiyev.android.codescanner.*
 import com.google.mlkit.codelab.translate.R
-import com.google.mlkit.codelab.translate.analyzer.BarcodeAnalyzer
-import com.google.mlkit.codelab.translate.util.ScopedExecutor
+import com.google.mlkit.codelab.translate.util.DetectConnection
+import com.google.mlkit.codelab.translate.util.Loading
+import com.google.mlkit.codelab.translate.util.PrefManager
 import kotlinx.android.synthetic.main.fragment_barcode.*
-import java.util.concurrent.ExecutorService
-import java.util.concurrent.Executors
-import kotlin.math.abs
-import kotlin.math.ln
-import kotlin.math.max
-import kotlin.math.min
+import org.json.JSONObject
+import java.io.UnsupportedEncodingException
+
 
 class BarcodeFragment : Fragment() {
 
-    companion object {
-        private const val RATIO_4_3_VALUE = 4.0 / 3.0
-        private const val RATIO_16_9_VALUE = 16.0 / 9.0
-        private const val TAG = "BarcodeFragment"
-        fun newInstance() = BarcodeFragment()
-    }
-
-    private val viewModel: BarcodeViewModel by viewModels()
-    private var cameraProvider: ProcessCameraProvider? = null
-    private var camera: Camera? = null
-    private var imageAnalyzer: ImageAnalysis? = null
-    private lateinit var container: ConstraintLayout
-    private lateinit var viewFinder: PreviewView
-
-    /** Blocking camera operations are performed using this executor */
-    private lateinit var cameraExecutor: ExecutorService
-
-    private lateinit var scopedExecutor: ScopedExecutor
+    private lateinit var codeScanner: CodeScanner
+    private lateinit var container: ViewGroup
+    private lateinit var bar : View
+    var word = ""
+    val progressBar = Loading()
+    var uniqueID : String? = ""
+    var bASE_URL : String? = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -53,102 +47,194 @@ class BarcodeFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_barcode, container, false)
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-
-        // Shut down our background executor
-        cameraExecutor.shutdown()
-        scopedExecutor.shutdown()
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        container = view as ConstraintLayout
-        viewFinder = container.findViewById(R.id.viewfinder)
-
-        // Initialize our background executor
-        cameraExecutor = Executors.newSingleThreadExecutor()
-        scopedExecutor = ScopedExecutor(cameraExecutor)
-
-        setUpCamera()
-        viewModel.barcodeResult.observe(viewLifecycleOwner, Observer {
-            resultText.text = it
-        })
+        container = view as RelativeLayout
+        bar = container.findViewById(R.id.bar)
+        loadSharedPreferences()
+        startAnimation()
+        initiateCodeScanner()
     }
 
-    /** Initialize CameraX, and prepare to bind the camera use cases  */
-    private fun setUpCamera() {
-        val cameraProviderFuture = ProcessCameraProvider.getInstance(requireContext())
-        cameraProviderFuture.addListener(Runnable {
-
-            // CameraProvider
-            cameraProvider = cameraProviderFuture.get()
-
-            // Build and bind the camera use cases
-            bindCameraUseCases()
-        }, ContextCompat.getMainExecutor(requireContext()))
+    private fun loadSharedPreferences() {
+        bASE_URL = PrefManager.getInstance(requireContext()).urlKey
+        uniqueID = PrefManager.getInstance(requireContext()).deviceId
     }
 
-    private fun bindCameraUseCases() {
-        val cameraProvider = cameraProvider
-            ?: throw IllegalStateException("Camera initialization failed.")
-
-        // Get screen metrics used to setup camera for full screen resolution
-        val metrics = DisplayMetrics().also { viewFinder.display.getRealMetrics(it) }
-
-        val screenAspectRatio = aspectRatio(metrics.widthPixels, metrics.heightPixels)
-
-        val rotation = viewFinder.display.rotation
-
-        val preview = Preview.Builder()
-            .setTargetAspectRatio(screenAspectRatio)
-            .setTargetRotation(rotation)
-            .build()
-
-        // Build the image analysis use case and instantiate our analyzer
-        imageAnalyzer = ImageAnalysis.Builder()
-            // We request aspect ratio but no resolution
-            .setTargetAspectRatio(screenAspectRatio)
-            .setTargetRotation(rotation)
-            .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
-            .build()
-            .also {
-                it.setAnalyzer(
-                    scopedExecutor
-                    , BarcodeAnalyzer(
-                        requireContext(),
-                        lifecycle,
-                        viewModel.barcodeResult
-                    )
-                )
+    private fun startAnimation() {
+        val animation : Animation = AnimationUtils.loadAnimation(requireContext(), R.anim.scan_animation)
+        animation.setAnimationListener(object : Animation.AnimationListener{
+            override fun onAnimationStart(p0: Animation?) {
             }
 
-        // Select back camera since text detection does not work with front camera
-        val cameraSelector =
-            CameraSelector.Builder().requireLensFacing(CameraSelector.LENS_FACING_BACK).build()
+            override fun onAnimationEnd(p0: Animation?) {
+                bar.visibility = View.GONE
+            }
 
+            override fun onAnimationRepeat(p0: Animation?) {
+            }
+
+        })
+        bar.startAnimation(animation)
+    }
+
+    private fun doTicketVerification() {
+        //check if any word has been detected
+        //stop the codeScanner
+        codeScanner.releaseResources()
+        //remove the scanning animation
+        bar.visibility = View.GONE
+        if (!(DetectConnection().isNetworkAvailable(requireContext()) || DetectConnection().isInternetAvailable()) ){
+            //check for internet connection
+            Toast.makeText(
+                requireContext(),
+                getString(R.string.check_connection),
+                Toast.LENGTH_SHORT
+            ).show()
+        } else if (word.isEmpty()) {
+            Toast.makeText(
+                requireContext(),
+                "No BarCode has been detected, Please Scan Again",
+                Toast.LENGTH_SHORT
+            ).show()
+        } else {
+            progressBar.startLoading(requireContext())
+            codeScanner.releaseResources()
+
+           /* val uniqueID = "1aac75011bf30e06fa9e06c973a28234"
+            val bASE_URL = "https://demo.ticketano.com/ticket-boarding"*/
+            val url = bASE_URL + "?device_id=" + uniqueID + "&ticket_number=" + word
+            var prev = "null"
+
+            if (prev != word) {
+                // Request a string response from the provided URL.
+                val stringRequest = StringRequest(
+                    Request.Method.GET, url, {
+                        progressBar.endLoading()
+                        val responseResult = it.toString()
+                        try {
+                            val responseObject = JSONObject(responseResult)
+                            openSuccessDialog(responseObject)
+
+                        }catch (e : Exception){
+                            Log.d("ERROR1", e.message.toString())
+                        }
+
+                    }, {
+
+                        progressBar.endLoading()
+
+                        var body: String?
+                        //get status code here
+                        val statusCode = it.networkResponse.statusCode.toString()
+                        Log.d("ERROR12", statusCode)
+                        if (it.networkResponse.data != null) {
+                            try {
+                                body = String(it.networkResponse.data, charset("UTF-8"))
+
+                                //converting response to json object
+                                val obj = JSONObject(body)
+                                openErrorDialog(obj)
+                            } catch (e: UnsupportedEncodingException) {
+                                Log.d("ERROR1", e.message.toString())
+                            }
+                        }
+                    }
+
+                )
+                MySingleton.getInstance(requireContext())
+                    .addToRequestQueue(stringRequest)
+            }
+        }
+    }
+
+    private fun openSuccessDialog(responseObject: JSONObject) {
+        val  builder = AlertDialog.Builder(requireContext())
+        val layoutView = layoutInflater.inflate(R.layout.success_dialog, null)
+        val dialogButton = layoutView.findViewById<AppCompatButton>(R.id.button_ok)
+        val messageView = layoutView.findViewById<TextView>(R.id.dialog_success_text)
+        messageView.text = responseObject.getString("message")
+        builder.setView(layoutView)
+        val alertDialog = builder.create()
+        alertDialog.show()
+
+        dialogButton.setOnClickListener {
+            alertDialog.dismiss()
+            //stop the codeScanner
+            codeScanner.startPreview()
+            //remove the scanning animation
+            bar.visibility = View.VISIBLE
+        }
+    }
+
+    private fun openErrorDialog(responseObject: JSONObject) {
+        val  builder = AlertDialog.Builder(requireContext())
+        val layoutView = layoutInflater.inflate(R.layout.error_dialog, null)
+        val dialogButton = layoutView.findViewById<AppCompatButton>(R.id.errorButton)
+        val messageView = layoutView.findViewById<TextView>(R.id.dialog_error_text)
+        messageView.text = responseObject.getString("message")
+        builder.setView(layoutView)
+        val alertDialog = builder.create()
+        alertDialog.show()
+
+        dialogButton.setOnClickListener {
+            alertDialog.dismiss()
+            //stop the codeScanner
+            codeScanner.startPreview()
+            //remove the scanning animation
+            bar.visibility = View.VISIBLE
+        }
+    }
+
+
+
+
+    private fun initiateCodeScanner() {
         try {
-            // Unbind use cases before rebinding
-            cameraProvider.unbindAll()
 
-            // Bind use cases to camera
-            camera = cameraProvider.bindToLifecycle(
-                this, cameraSelector, preview, imageAnalyzer
-            )
-            preview.setSurfaceProvider(viewFinder.surfaceProvider)
-        } catch (exc: IllegalStateException) {
-            Log.e(TAG, "Use case binding failed. This must be running on main thread.", exc)
+
+            codeScanner = CodeScanner(requireContext(), scanner_view)
+            codeScanner.apply {
+                //set to use back camera
+                camera = CodeScanner.CAMERA_BACK
+                //set to scan all barcode formats
+                formats = CodeScanner.ALL_FORMATS
+
+                autoFocusMode = AutoFocusMode.SAFE
+                scanMode = ScanMode.CONTINUOUS
+                isAutoFocusEnabled = true
+                isFlashEnabled = false
+
+                decodeCallback = DecodeCallback {
+                    activity?.runOnUiThread {
+                        word = it.text
+                        doTicketVerification()
+                    }
+                }
+
+                errorCallback = ErrorCallback {
+                    activity?.runOnUiThread {
+                        Toast.makeText(requireContext(), it.message, Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }
+            codeScanner.startPreview()
+        }catch (e : Exception){
+            Toast.makeText(requireContext(), e.message, Toast.LENGTH_SHORT).show()
         }
     }
 
-    private fun aspectRatio(width: Int, height: Int): Int {
-        val previewRatio = ln(max(width, height).toDouble() / min(width, height))
-        if (abs(previewRatio - ln(RATIO_4_3_VALUE))
-            <= abs(previewRatio - ln(RATIO_16_9_VALUE))
-        ) {
-            return AspectRatio.RATIO_4_3
-        }
-        return AspectRatio.RATIO_16_9
+    override fun onResume() {
+        super.onResume()
+        codeScanner.startPreview()
     }
+
+    override fun onPause() {
+        super.onPause()
+        codeScanner.releaseResources()
+    }
+
+
 }

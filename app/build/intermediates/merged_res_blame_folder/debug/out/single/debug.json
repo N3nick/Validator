@@ -1,106 +1,166 @@
 [
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_translate_24px.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\drawable\\ic_translate_24px.xml"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\layout_main_activity.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\layout\\main_activity.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\drawable_greyscale_regular_3x.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\drawable\\greyscale_regular_3x.png"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_face.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\layout\\fragment_face.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_face.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\layout\\fragment_face.xml"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\font_pt_sans.ttf.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\font\\pt_sans.ttf"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\anim_scan_animation.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\anim\\scan_animation.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_nav_menu.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_settings_24.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\ic_baseline_settings_24.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\font_pt_sans.ttf.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\font\\pt_sans.ttf"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_blue_selector.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\btn_blue_selector.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_greyscale_regular_3x.png.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\greyscale_regular_3x.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\layout_main_fragment.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\layout\\main_fragment.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\layout_main_fragment.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\layout\\main_fragment.xml"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_barcode.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\layout\\fragment_barcode.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_barcode_24px.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\drawable\\ic_barcode_24px.xml"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_check_circle.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\ic_baseline_check_circle.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_success_button_bg.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\success_button_bg.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_tag_faces_24px.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\drawable\\ic_tag_faces_24px.xml"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\layout_success_dialog.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\layout\\success_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\layout_main_activity.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\layout\\main_activity.xml"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_translate_24px.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\ic_translate_24px.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_green_pressed.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\btn_green_pressed.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\raw_tickets.json.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\raw\\tickets.json"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_nav.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\layout\\activity_main_nav.xml"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_back_button.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\ic_back_button.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_barcode.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\layout\\fragment_barcode.xml"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\final\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\layout_error_dialog.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\layout\\error_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_error.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\ic_baseline_error.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_image_24.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\ic_baseline_image_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\menu_toolbar_menu.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\menu\\toolbar_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_barcode_24px.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\ic_barcode_24px.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_tag_faces_24px.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\ic_tag_faces_24px.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_nav.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\layout\\activity_main_nav.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\LENOVO\\Desktop\\Bleecom Validator\\Validator\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     }
 ]
